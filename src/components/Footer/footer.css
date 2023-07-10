@@ -1,0 +1,124 @@
+.footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #a0a0a0;;
+    padding: 25px 0px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-container-title {
+    color: #0c1f6e;
+    font-size: 100;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-container-info {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.footer-container-info-icon {
+    font-size: 16px;
+    color: #dbdbdb;
+    margin-right: 20px;
+}
+
+.footer-container-info-text {
+    font-size: 14px;
+    color: #dbdbdb;
+}
+
+.footer-container-img {
+    width: 130px;
+}
+
+.autor {
+    width: 100vw;
+    background-color: #8c8c8c;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-mob {
+    display: none;
+    width: 100vw;
+    justify-content: center;
+    background-color: #0c1f6e;
+    color: #fff;
+    padding: 17px;
+    font-size: 12px;
+}
+
+.footer-mob-button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-mob-button:hover {
+    color: #e66022;
+}
+
+.footer-mobile {
+    display: none;
+    width: 100vw;
+    background-color: #8c8c8c;    
+    padding: 10px 0px;
+}
+
+.footer-mobile-ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.footer-mobile-ul-li {
+    padding: 15px 0px;
+}
+
+.footer-mobile-ul-li-a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-mobile-ul-li-a:hover {
+    color: #e66022;
+}
+
+@media screen and (max-width: 900px) {
+    #footer-container-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #footer {
+        display: none;
+    }
+
+    .footer-mob, .footer-mobile {
+        display: flex;
+    }
+
+    .footer-mobile-ul-li-a {
+        font-size: 12px;
+    }
+
+    .autor {
+        padding: 12px;
+        letter-spacing: 1px;
+    }
+}
