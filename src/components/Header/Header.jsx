@@ -1,10 +1,16 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { AiOutlineInstagram, AiOutlineSearch } from 'react-icons/ai';
 import { BiLogoFacebook } from 'react-icons/bi';
 import './header.css';
+import { setActivePage } from '../../app/state/globalSlice';
 
 export default function Header() {
+
+  const dispatch = useDispatch();
+  const activeLink = useSelector((state) => state.global.global);
+
   return (
     <header className='header'>
       <div className='header-container'>
@@ -25,7 +31,7 @@ export default function Header() {
 
       <div className='header-search'>
         <Link to='/'>
-          <img className='header-search-kelly' src='../../../public/assets/kelly.png' alt='Kelly' />
+          <img onClick={() => dispatch(setActivePage('INICIO'))} className='header-search-kelly' src='../../../public/assets/kelly.png' alt='Kelly' />
         </Link>
         <div className='header-search-container'>
           <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando hoy?' />
@@ -37,32 +43,32 @@ export default function Header() {
       <nav className='header-nav'>
         <ul className='header-nav-ul'>
           <li className='header-nav-ul-li'>
-            <Link className='header-nav-ul-li-link' to='/'>
+            <Link onClick={() => dispatch(setActivePage('INICIO'))} className={ activeLink == 'INICIO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/' >
               INICIO
             </Link>
           </li>
           <li>
-            <Link className='header-nav-ul-li-link' to='/'>
+            <Link onClick={() => dispatch(setActivePage('NOSOTROS'))} className={ activeLink == 'NOSOTROS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
               NOSOTROS
             </Link>
           </li>
           <li>
-            <Link className='header-nav-ul-li-link' to='/'>
+            <Link onClick={() => dispatch(setActivePage('NUEVOS'))} className={ activeLink == 'NUEVOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
               NUEVOS
             </Link>
           </li>
           <li>
-            <Link className='header-nav-ul-li-link' to='/'>
+            <Link onClick={() => dispatch(setActivePage('USADOS'))} className={ activeLink == 'USADOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
               USADOS
             </Link>
           </li>
           <li>
-            <Link className='header-nav-ul-li-link' to='/'>
+            <Link onClick={() => dispatch(setActivePage('REPUESTOS'))} className={ activeLink == 'REPUESTOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
               REPUESTOS
             </Link>
           </li>
           <li>
-            <Link className='header-nav-ul-li-link' to='/'>
+            <Link onClick={() => dispatch(setActivePage('CONTACTO'))} className={ activeLink == 'CONTACTO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
               CONTACTO
             </Link>
           </li>
