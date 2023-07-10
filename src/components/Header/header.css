@@ -81,6 +81,10 @@
     transition: 0.4s;
 }
 
+.header-search-container-iconMobile {
+    display: none;
+}
+
 .header-search-container-icon:hover {
     color: #e66022;
     font-weight: 700;
@@ -102,6 +106,16 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-nav-ul-mobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-decoration: none;
     list-style: none;
 }
@@ -129,4 +143,60 @@
 
 .header-nav-ul-li-link:hover {
     color: #e66022;
+}
+
+@media screen and (max-width: 750px) {
+    .header-container, .header-search-container, .header-search-newHolland {
+        display: none;
+    }
+
+    .header-search {
+        padding: 30px 40px 0px 40px;
+        justify-content: space-between;
+    }
+
+    .header-search-kelly {
+        width: 100px;
+    }
+
+    .header-search-container-iconMobile {
+        display: block;
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+    .header-nav {
+        flex-direction: column;
+    }
+
+    .header-nav-ul {
+        display: none;
+    }
+
+    .header-nav-ul-mobile {
+        width: 100%;
+    }
+
+    .header-nav-ul-li {
+        padding: 20px;
+        border-top: 1px solid #e0e0e0;
+        width: 100%;
+    }
+
+    .header-nav-ul-li-link {
+        color: #13071f;
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    .header-search-container {
+        width: 100%;
+        padding: 0px 23px;
+    }
+
+    .header-search-container-input {
+        border: 0px;
+        border-radius: 0px;
+    }
+
 }
