@@ -3,8 +3,8 @@ import './home.css';
 
 export default function Home() {
   return (
-    <main>
-      <ContactSection />
+    <main className='fade-in'>
+      <h1>Home</h1>
     </main>
   )
 }
