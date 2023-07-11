@@ -1,5 +1,5 @@
 .header {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #C3C5CA;
+    background-color: #FFDA00;
     padding: 14px 0px;
 }
 
@@ -24,7 +24,7 @@
 .header-container-info-a, .header-container-tel{
     font-size: 14px;
     padding: 15px 10px;
-    color: #0c1f6e;
+    color: #004994;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
@@ -32,8 +32,8 @@
 
 
 .header-container-info-a:hover , .header-container-tel:hover {
-    background-color: #e66022;
-    color: #ffffff;
+    background-color: #004994;
+    color: #FFDA00;
 }
 
 .header-search {
@@ -63,12 +63,10 @@
 }
 
 .header-search-container-input:active {
-    
     outline: none;
 }
 
-.header-search-container-input:focus {
-    
+.header-search-container-input:focus {   
     outline: none;
 }
 
@@ -86,7 +84,7 @@
 }
 
 .header-search-container-icon:hover {
-    color: #e66022;
+    color: #004994;
     font-weight: 700;
 }
 
@@ -128,7 +126,7 @@
 .header-nav-ul-li-link {
     text-decoration: none;
     padding: 0px 20px;
-    color: #0c1f6e;
+    color: #004994;
     font-weight: 700;
     transition: 0.3s;
 }
@@ -136,13 +134,13 @@
 .header-nav-ul-li-link-active {
     text-decoration: none;
     padding: 0px 20px;
-    color: #e66022;
+    color: #000000;
     font-weight: 700;
     transition: 0.3s;
 }
 
 .header-nav-ul-li-link:hover {
-    color: #e66022;
+    color: #000000;
 }
 
 @media screen and (max-width: 750px) {

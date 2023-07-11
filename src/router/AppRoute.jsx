@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Home = lazy(() => import("../pages/Home/Home"));
-
+const AboutUs = lazy(() => import("../pages/AboutUs/AboutUs"));
 const Spinner = lazy(() => import("../components/Spinner/Spinner"));
 
 export default function AppRoute() {
@@ -15,6 +15,7 @@ export default function AppRoute() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/nosotros" element={<AboutUs />} />
           </Routes>
         </Layout>
       </BrowserRouter>

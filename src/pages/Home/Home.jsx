@@ -1,7 +1,10 @@
+import ContactSection from '../../components/ContactSection/ContactSection';
 import './home.css';
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <main>
+      <ContactSection />
+    </main>
   )
 }

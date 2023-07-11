@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { setActivePage } from '../../app/state/globalSlice';
+
 import { AiOutlineInstagram, AiOutlineSearch,AiOutlineMenu } from 'react-icons/ai';
 import { BiLogoFacebook } from 'react-icons/bi';
 import { RxCross1 } from 'react-icons/rx';
+
 import './header.css';
-import { setActivePage } from '../../app/state/globalSlice';
 
 export default function Header() {
 
@@ -13,8 +15,6 @@ export default function Header() {
 
   const activeLink = useSelector((state) => state.global.global);
   const [mobileMenuOpen,setMobileMenuOpen] = useState(false);
-
-  console.log(window.innerWidth)
 
   return (
     <header className='header'>
@@ -67,7 +67,7 @@ export default function Header() {
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
-            <Link onClick={() => dispatch(setActivePage('NOSOTROS'))} className={ activeLink == 'NOSOTROS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
+            <Link onClick={() => dispatch(setActivePage('NOSOTROS'))} className={ activeLink == 'NOSOTROS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/nosotros'>
               NOSOTROS
             </Link>
           </li>

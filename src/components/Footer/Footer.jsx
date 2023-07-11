@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
 import { MdLocationOn } from 'react-icons/md';
+
 import './footer.css';
 
 export default function Footer() {
