@@ -7,9 +7,10 @@ export default function ContactSection() {
       <article className='contactSection-article'>
         <h2 className='contactSection-article-title'>CONTACTANOS</h2>
         <h3>No dudes en escribirnos</h3>
+        <p>Atención personalizada en todo momento para que puedas accedar a tu maquinaria agricola ya mismo</p><br></br>
+        <p>Atención personalizada en todo momento para que puedas accedar a tu maquinaria agricola ya mismo</p><br></br>
         <p>Atención personalizada en todo momento para que puedas accedar a tu maquinaria agricola ya mismo</p>
-        <input type='file' />
-        <button type='button'>ENVIAR</button>
+
       </article>
       
       <article className='contactSection-article2'>
