@@ -13,8 +13,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: -200px;
 }
 
 .contact-section1-img {
     width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+    .contact-section1 {
+        margin-bottom: -130px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contact-section1 {
+        margin-bottom: -100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-section1 {
+        margin-bottom: -60px;
+    }
 }

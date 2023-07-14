@@ -60,7 +60,7 @@ export default function Header() {
 
       <nav className='header-nav'>
         {
-          mobileMenuOpen && window.innerWidth == '700px' && 
+          mobileMenuOpen && window.innerWidth < 700 && 
           <div className='header-search-container' style={{display: 'flex'}}>
             <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando hoy?' />
             <AiOutlineSearch className='header-search-container-icon' />
@@ -78,8 +78,8 @@ export default function Header() {
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
-            <Link onClick={() => changePage('NUEVOS')} className={ activeLink == 'NUEVOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
-              NUEVOS
+            <Link onClick={() => changePage('PRODUCTOS')} className={ activeLink == 'PRODUCTOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/productos'>
+              PRODUCTOS
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
