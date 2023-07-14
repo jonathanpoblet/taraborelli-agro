@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Home = lazy(() => import("../pages/Home/Home"));
 const AboutUs = lazy(() => import("../pages/AboutUs/AboutUs"));
+const Contact = lazy(() => import("../pages/Contact/Contact"));
 const Spinner = lazy(() => import("../components/Spinner/Spinner"));
 
 export default function AppRoute() {
@@ -16,6 +17,7 @@ export default function AppRoute() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/nosotros" element={<AboutUs />} />
+            <Route path="/contacto" element={<Contact />} />
           </Routes>
         </Layout>
       </BrowserRouter>

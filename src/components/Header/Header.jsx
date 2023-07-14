@@ -87,7 +87,7 @@ export default function Header() {
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
-            <Link onClick={() => dispatch(setActivePage('CONTACTO'))} className={ activeLink == 'CONTACTO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
+            <Link onClick={() => dispatch(setActivePage('CONTACTO'))} className={ activeLink == 'CONTACTO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/contacto'>
               CONTACTO
             </Link>
           </li>
