@@ -16,6 +16,12 @@ export default function Header() {
   const activeLink = useSelector((state) => state.global.global);
   const [mobileMenuOpen,setMobileMenuOpen] = useState(false);
 
+
+  function changePage(page) {
+    setMobileMenuOpen(!mobileMenuOpen)
+    dispatch(setActivePage(page))
+  }
+
   return (
     <header className='header'>
       <div className='header-container'>
@@ -54,7 +60,7 @@ export default function Header() {
 
       <nav className='header-nav'>
         {
-          mobileMenuOpen && 
+          mobileMenuOpen && window.innerWidth == '700px' && 
           <div className='header-search-container' style={{display: 'flex'}}>
             <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando hoy?' />
             <AiOutlineSearch className='header-search-container-icon' />
@@ -62,32 +68,32 @@ export default function Header() {
         }
         <ul className={ window.innerWidth < 750 && mobileMenuOpen ? 'header-nav-ul-mobile' : 'header-nav-ul' }>
           <li className='header-nav-ul-li'>
-            <Link onClick={() => dispatch(setActivePage('INICIO'))} className={ activeLink == 'INICIO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/' >
+            <Link onClick={() => changePage('INICIO')} className={ activeLink == 'INICIO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/' >
               INICIO
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
-            <Link onClick={() => dispatch(setActivePage('NOSOTROS'))} className={ activeLink == 'NOSOTROS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/nosotros'>
+            <Link onClick={() => changePage('NOSOTROS')} className={ activeLink == 'NOSOTROS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/nosotros'>
               NOSOTROS
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
-            <Link onClick={() => dispatch(setActivePage('NUEVOS'))} className={ activeLink == 'NUEVOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
+            <Link onClick={() => changePage('NUEVOS')} className={ activeLink == 'NUEVOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
               NUEVOS
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
-            <Link onClick={() => dispatch(setActivePage('USADOS'))} className={ activeLink == 'USADOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
+            <Link onClick={() => changePage('USADOS')} className={ activeLink == 'USADOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
               USADOS
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
-            <Link onClick={() => dispatch(setActivePage('REPUESTOS'))} className={ activeLink == 'REPUESTOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
+            <Link onClick={() => changePage('REPUESTOS')} className={ activeLink == 'REPUESTOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
               REPUESTOS
             </Link>
           </li>
           <li  className='header-nav-ul-li'>
-            <Link onClick={() => dispatch(setActivePage('CONTACTO'))} className={ activeLink == 'CONTACTO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/contacto'>
+            <Link onClick={() => changePage('CONTACTO')} className={ activeLink == 'CONTACTO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/contacto'>
               CONTACTO
             </Link>
           </li>
