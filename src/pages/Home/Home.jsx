@@ -8,6 +8,15 @@ export default function Home() {
 
   return (
     <main className='home fade-in'>
+      <section className='home-banner'>
+        <img alt='banner' src='../../../public/assets/banner.png' />
+        <div className='slide-in'>
+          <h1>NEW HOLLAND</h1>
+          <Link className='home-banner-div-link' to='/productos'>
+            VER PRODUCTOS
+          </Link>
+        </div>
+      </section>
       <section className='home-productos'>
         <div className='home-productos-head'>
           <h3>CONSULTA NUESTROS PRODUCTOS</h3>
@@ -23,8 +32,6 @@ export default function Home() {
           }
         </div>
       </section>
-
-
       <ContactSection />
     </main>
   )

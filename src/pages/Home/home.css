@@ -1,11 +1,64 @@
+.slide-in {
+    position: relative;
+    animation: slide-in 1.5s ease forwards;
+    white-space: nowrap;
+    overflow: hidden;
+}
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
 .home {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 30px;
     overflow: hidden;
+}
+
+.home-banner {
+    width: 100%;
+    position: relative;
+}
+
+.home-banner img {
+    width: 100%;
+    margin-bottom: 50px;
+    min-height: 250px;
+}
+
+.home-banner div {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 100%;
+}
+
+.home-banner div h1 {
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 60px;
+}
+
+.home-banner-div-link {
+    background-color: #004994;
+    color: #fff;
+    padding: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.home-banner-div-link:hover {
+    background-color: #002549;
 }
 
 .home-productos {
@@ -13,7 +66,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .home-productos-head {
@@ -58,6 +111,7 @@
 
 .home-productos-photos img {
     width: 20%;
+    min-width: 200px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -66,8 +120,44 @@
     transform: scale(1.2)
 }
 
+
+@media screen and (max-width: 1020px) {
+    .home-productos-photos {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .home {
         padding-top: 0px;
+    }
+
+    .home-banner div h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .home-banner-div-link {
+        padding: 7px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-productos-photos img {
+        width: 33%;
+        min-width: 0px;
+    }
+
+    .home-productos-head h3 {
+        font-size: 14px;
+        padding-right: 20px;
+    }
+
+    .home-band {
+        height: 300px;
+        background-color: #004994;
+        width: 100%;
+        margin-bottom: -150px;
     }
 }
