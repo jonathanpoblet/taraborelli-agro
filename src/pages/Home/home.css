@@ -4,6 +4,10 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
+.slide-in h1{
+    text-shadow: 1px 1px 1px #949494;
+}
   
   @keyframes slide-in {
     0% {
@@ -55,18 +59,72 @@
     border-radius: 4px;
     text-decoration: none;
     transition: 0.4s;
+    box-shadow: 1px 1px 5px 1px #6b6b6b;
 }
 
 .home-banner-div-link:hover {
     background-color: #002549;
 }
 
+.home-looking {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home-looking-title {
+    text-shadow: 1px 1px 1px #eeeeee;
+
+}
+
+.home-looking-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.home-looking-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    box-shadow: 2px 2px 10px 2px #cfcfcf;
+}
+
+.home-looking-container div img {
+    height: 270px;
+    width: 230px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.home-looking-container div p {
+    width: 100%;
+    background-color: #004994;
+    color: #fff;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    line-height: 20px;
+}
+
+
 .home-productos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .home-productos-head {
@@ -127,6 +185,17 @@
     }
 }
 
+@media screen and (max-width: 850px) {
+    .home-looking-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-looking-container div {
+        margin: 15px 40px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .home {
         padding-top: 0px;
@@ -140,6 +209,21 @@
     .home-banner-div-link {
         padding: 7px;
         font-size: 12px;
+    }
+
+    .home-looking-title {
+        font-size: 17px;
+        padding: 0px 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-looking-container {
+        flex-direction: column;
+    }
+
+    .home-looking-title {
+        font-size: 16px;
     }
 }
 

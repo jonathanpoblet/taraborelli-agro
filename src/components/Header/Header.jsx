@@ -45,7 +45,7 @@ export default function Header() {
           <img onClick={() => dispatch(setActivePage('INICIO'))} className='header-search-kelly' src='../../../public/assets/taraborelli-agro-logo.png' alt='Kelly' />
         </Link>
         <div className='header-search-container'>
-          <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando hoy?' />
+          <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando?' />
           <AiOutlineSearch className='header-search-container-icon' />
         </div>
         {

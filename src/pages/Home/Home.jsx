@@ -11,10 +11,27 @@ export default function Home() {
       <section className='home-banner'>
         <img alt='banner' src='../../../public/assets/banner.png' />
         <div className='slide-in'>
-          <h1>NEW HOLLAND</h1>
+          <h1>TARABORELLI<br></br> AGRO </h1>
           <Link className='home-banner-div-link' to='/productos'>
             VER PRODUCTOS
           </Link>
+        </div>
+      </section>
+      <section className='home-looking'>
+        <h2 className='home-looking-title'>ENCONTRÁ LO QUE ESTÁS BUSCANDO</h2>
+        <div className='home-looking-container'>
+          <div>
+            <img src='../../../public/assets/truck.jpeg' alt='' />
+            <p>ENTREGA<br></br>INMEDIATA</p>
+          </div>
+          <div>
+            <img src='../../../public/assets/truck.jpeg' alt='' />
+            <p>ATENCIÓN<br></br>PERSONALIZADA</p>
+          </div>
+          <div>
+            <img src='../../../public/assets/truck.jpeg' alt='' />
+            <p>SERVICIO<br></br>POSTVENTA</p>
+          </div>
         </div>
       </section>
       <section className='home-productos'>
