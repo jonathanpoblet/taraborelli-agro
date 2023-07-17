@@ -42,13 +42,12 @@ export default function Header() {
 
       <div className='header-search'>
         <Link to='/'>
-          <img onClick={() => dispatch(setActivePage('INICIO'))} className='header-search-kelly' src='../../../public/assets/kelly.png' alt='Kelly' />
+          <img onClick={() => dispatch(setActivePage('INICIO'))} className='header-search-kelly' src='../../../public/assets/taraborelli-agro-logo.png' alt='Kelly' />
         </Link>
         <div className='header-search-container'>
           <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando hoy?' />
           <AiOutlineSearch className='header-search-container-icon' />
         </div>
-        <img className='header-search-newHolland' src='../../../public/assets/new-holland.png' alt='New Holland' />
         {
           mobileMenuOpen ? 
           <RxCross1 onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='header-search-container-iconMobile' />

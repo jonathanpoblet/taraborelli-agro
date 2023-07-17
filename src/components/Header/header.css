@@ -38,7 +38,7 @@
 .header-container-info-a, .header-container-tel{
     font-size: 14px;
     padding: 15px 10px;
-    color: #004994;
+    color: #000;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
@@ -46,8 +46,8 @@
 
 
 .header-container-info-a:hover , .header-container-tel:hover {
-    background-color: #004994;
-    color: #FFDA00;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .header-search {
@@ -61,7 +61,7 @@
 }
 
 .header-search-kelly {
-    width: 200px;
+    width: 350px;
 }
 
 .header-search-container{
@@ -168,7 +168,7 @@
     }
 
     .header-search-kelly {
-        width: 100px;
+        width: 280px;
     }
 
     .header-search-container-iconMobile {
@@ -209,6 +209,13 @@
     .header-search-container-input {
         border: 0px;
         border-radius: 0px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .header-search-kelly {
+        width: 200px;
     }
 
 }
