@@ -8,6 +8,7 @@ const Home = lazy(() => import("../pages/Home/Home"));
 const AboutUs = lazy(() => import("../pages/AboutUs/AboutUs"));
 const Contact = lazy(() => import("../pages/Contact/Contact"));
 const Products = lazy(() => import("../pages/Products/Products"));
+const Used = lazy(() => import("../pages/Used/Used"));
 const Spinner = lazy(() => import("../components/Spinner/Spinner"));
 
 export default function AppRoute() {
@@ -19,6 +20,7 @@ export default function AppRoute() {
             <Route path="/" element={<Home />} />
             <Route path="/nosotros" element={<AboutUs />} />
             <Route path="/productos" element={<Products />} />
+            <Route path="/usados" element={<Used />} />
             <Route path="/contacto" element={<Contact />} />
           </Routes>
         </Layout>

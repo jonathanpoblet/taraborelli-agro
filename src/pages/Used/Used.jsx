@@ -1,9 +1,9 @@
 import Product from '../../components/Product/Product';
 import React from 'react';
 
-import './products.css';
+import './used.css';
 
-export default function Products() {
+export default function Used() {
   const data = [
     {
       name: 'TRACTORES',
@@ -66,9 +66,8 @@ export default function Products() {
       ]
     }
   ]
-
   return (
-    <main className='product'>
+    <main className='used'>
       <Product
         data = { data }
       />
