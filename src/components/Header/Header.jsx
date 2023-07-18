@@ -42,7 +42,7 @@ export default function Header() {
 
       <div className='header-search'>
         <Link to='/'>
-          <img onClick={() => dispatch(setActivePage('INICIO'))} className='header-search-kelly' src='../../../public/assets/taraborelli-agro-logo.png' alt='Kelly' />
+          <img onClick={() => changePage('INICIO')} className='header-search-kelly' src='../../../public/assets/taraborelli-agro-logo.png' alt='Kelly' />
         </Link>
         <div className='header-search-container'>
           <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando?' />
