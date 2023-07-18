@@ -42,12 +42,8 @@ export default function Header() {
 
       <div className='header-search'>
         <Link to='/'>
-          <img onClick={() => changePage('INICIO')} className='header-search-kelly' src='../../../public/assets/taraborelli-agro-logo.png' alt='Kelly' />
+          <img onClick={() => changePage('INICIO')} className='header-search-img' src='../../../public/assets/taraborelli-agro-logo.png' alt='Kelly' />
         </Link>
-        <div className='header-search-container'>
-          <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando?' />
-          <AiOutlineSearch className='header-search-container-icon' />
-        </div>
         {
           mobileMenuOpen ? 
           <RxCross1 onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className='header-search-container-iconMobile' />
@@ -58,13 +54,6 @@ export default function Header() {
       </div>
 
       <nav className='header-nav'>
-        {
-          mobileMenuOpen && window.innerWidth < 700 && 
-          <div className='header-search-container' style={{display: 'flex'}}>
-            <input className='header-search-container-input' type='text' placeholder='¿Qué estas buscando hoy?' />
-            <AiOutlineSearch className='header-search-container-icon' />
-          </div>
-        }
         <ul className={ window.innerWidth < 750 && mobileMenuOpen ? 'header-nav-ul-mobile' : 'header-nav-ul' }>
           <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('INICIO')} className={ activeLink == 'INICIO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/' >

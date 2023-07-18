@@ -60,28 +60,13 @@
     padding-top: 25px;
 }
 
-.header-search-kelly {
-    width: 350px;
+.header-search-img {
+    width: 450px;
 }
 
 .header-search-container{
     position: relative;
     width: 320px;
-}
-
-.header-search-container-input {
-    width: 100%;
-    border-radius: 25px;
-    padding: 14px 15px;
-    border: 1px solid #b6b6b6;
-}
-
-.header-search-container-input:active {
-    outline: none;
-}
-
-.header-search-container-input:focus {   
-    outline: none;
 }
 
 .header-search-container-icon {
@@ -157,7 +142,7 @@
     color: #000000;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 936px) {
     .header-container, .header-search-container, .header-search-newHolland {
         display: none;
     }
@@ -167,7 +152,7 @@
         justify-content: space-between;
     }
 
-    .header-search-kelly {
+    .header-search-img {
         width: 280px;
     }
 
@@ -210,12 +195,16 @@
         border: 0px;
         border-radius: 0px;
     }
-
 }
 
 @media screen and (max-width: 750px) {
-    .header-search-kelly {
-        width: 200px;
+    .header-search-img {
+        width: 280px;
     }
+}
 
+@media screen and (max-width: 500px) {
+    .header-search-img {
+        width: 220px;
+    }
 }
