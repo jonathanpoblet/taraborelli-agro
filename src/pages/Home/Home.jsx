@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className='home fade-in'>
       <section className='home-banner'>
-        <img alt='banner' src='../../../public/assets/banner.png' />
+        <img alt='banner' src='https://www.comasa.com.uy/wp-content/uploads/2017/04/img-newholland-small.jpg' />
         <div className='slide-in'>
           <h1>TARABORELLI<br></br> AGRO </h1>
           <Link className='home-banner-div-link' to='/productos'>
@@ -21,15 +21,15 @@ export default function Home() {
         <h2 className='home-looking-title'>ENCONTRÁ LO QUE ESTÁS BUSCANDO</h2>
         <div className='home-looking-container'>
           <div>
-            <img src='../../../public/assets/truck.jpeg' alt='' />
+            <img src='https://elconstructor.com/wp-content/uploads/2022/05/tractor-New-Holland.jpg' alt='' />
             <p>ENTREGA<br></br>INMEDIATA</p>
           </div>
           <div>
-            <img src='../../../public/assets/truck.jpeg' alt='' />
+            <img src='https://static.landwirt.com/3572-98cbe7d550898e136d0028120217f52c-3154973-0vb.jpg' alt='' />
             <p>ATENCIÓN<br></br>PERSONALIZADA</p>
           </div>
           <div>
-            <img src='../../../public/assets/truck.jpeg' alt='' />
+            <img src='https://agrotecnica.online/wp-content/uploads/2021/07/New-Holland-launches-new-T7-Heavy-Duty_590561.jpg' alt='' />
             <p>SERVICIO<br></br>POSTVENTA</p>
           </div>
         </div>
