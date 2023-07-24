@@ -21,12 +21,12 @@ export default function ContactSection() {
     const modelo = document.getElementById('modelo').value;
     const mensaje = document.getElementById('mensaje').value;
 
-    if(!nombre) return Swal.fire({title: 'Ingresa un nombre', confirmButtonText: 'OK',confirmButtonColor: '#111',  customClass: { popup: 'custom-background', title: 'custom-title' }});
-    if(!apellido) return Swal.fire({title: 'Ingresa un apellido', confirmButtonText: 'OK',confirmButtonColor: '#111',  customClass: { popup: 'custom-background', title: 'custom-title' }});
-    if(!tel) return Swal.fire({title: 'Ingresa un telefono', confirmButtonText: 'OK',confirmButtonColor: '#111', customClass: { popup: 'custom-background', title: 'custom-title' }});
-    if(!email) return Swal.fire({title: 'Ingresa un email', confirmButtonText: 'OK',confirmButtonColor: '#111', customClass: { popup: 'custom-background', title: 'custom-title' }});
-    if(!modelo) return Swal.fire({title: 'Ingresa el modelo que buscas', confirmButtonText: 'OK',confirmButtonColor: '#111', customClass: { popup: 'custom-background', title: 'custom-title' }});
-    if(!mensaje) return Swal.fire({title: 'Ingresa su consulta', confirmButtonText: 'OK',confirmButtonColor: '#111', customClass: { popup: 'custom-background', title: 'custom-title' }});
+    if(!nombre) return Swal.fire({title: 'Ingresa un nombre', confirmButtonText: 'OK',confirmButtonColor: '#000',  customClass: { popup: 'custom-background', title: 'custom-title' }});
+    if(!apellido) return Swal.fire({title: 'Ingresa un apellido', confirmButtonText: 'OK',confirmButtonColor: '#000',  customClass: { popup: 'custom-background', title: 'custom-title' }});
+    if(!tel) return Swal.fire({title: 'Ingresa un telefono', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
+    if(!email) return Swal.fire({title: 'Ingresa un email', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
+    if(!modelo) return Swal.fire({title: 'Ingresa el modelo que buscas', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
+    if(!mensaje) return Swal.fire({title: 'Ingresa su consulta', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
 
     if(nombre) form = {...form, nombre}
     if(apellido) form = {...form, apellido}
@@ -36,7 +36,15 @@ export default function ContactSection() {
     if(modelo) form = {...form, modelo}
     if(mensaje) form = {...form, mensaje}
 
-    console.log(form)
+    Swal.fire({title: 'Enviando...', showCloseButton: 'false' ,confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
+
+    setTimeout(() => {
+      Swal.fire({title: 'Formulario enviado con exito', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
+      setTimeout(() => {
+        location.reload();
+      }, 1500);
+    }, 1500);
+
   }
 
 

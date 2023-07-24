@@ -1,3 +1,11 @@
+.custom-background {
+    background-color: #1f1f1f;
+}
+
+.custom-title {
+    color: #ffff;
+}
+
 .contact {
     width: 100%;
     display: flex;

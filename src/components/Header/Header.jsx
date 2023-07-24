@@ -54,7 +54,7 @@ export default function Header() {
       </div>
 
       <nav className='header-nav'>
-        <ul className={ window.innerWidth < 750 && mobileMenuOpen ? 'header-nav-ul-mobile' : 'header-nav-ul' }>
+        <ul className={ window.innerWidth < 937 && mobileMenuOpen ? 'header-nav-ul-mobile' : 'header-nav-ul' }>
           <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('INICIO')} className={ activeLink == 'INICIO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/' >
               INICIO
@@ -73,11 +73,6 @@ export default function Header() {
           <li  className='header-nav-ul-li'>
             <Link onClick={() => changePage('USADOS')} className={ activeLink == 'USADOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/usados'>
               USADOS
-            </Link>
-          </li>
-          <li  className='header-nav-ul-li'>
-            <Link onClick={() => changePage('REPUESTOS')} className={ activeLink == 'REPUESTOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/'>
-              REPUESTOS
             </Link>
           </li>
           <li  className='header-nav-ul-li'>

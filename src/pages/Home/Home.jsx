@@ -4,7 +4,7 @@ import './home.css';
 
 export default function Home() {
 
-  const data = ['https://dealers.rewebmkt.com/images/20220318015940-mini.png', 'https://dealers.rewebmkt.com/images/20220318020623-mini.png', 'https://dealers.rewebmkt.com/images/20220908010040-mini.png', 'https://dealers.rewebmkt.com/images/20220318023619-mini.png', 'https://dealers.rewebmkt.com/images/20220318051258-mini.png']
+  const data = ['https://dealers.rewebmkt.com/images/20220318015940-mini.png', 'https://dealers.rewebmkt.com/images/20220318020623-mini.png', 'https://dealers.rewebmkt.com/images/20220908010040-mini.png', 'https://dealers.rewebmkt.com/images/20220318051258-mini.png']
 
   return (
     <main className='home fade-in'>

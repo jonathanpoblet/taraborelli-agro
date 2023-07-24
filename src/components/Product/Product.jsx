@@ -2,6 +2,11 @@ import React from 'react';
 import './product.css';
 
 export default function Product({data}) {
+
+  const viewDetail = (id) => {
+    window.location.href = `http://localhost:5173/productos/detalle?id=${id}`;
+  }
+
   return (
     <section className='product-list fade-in'>
         {
@@ -15,7 +20,13 @@ export default function Product({data}) {
                   {
                     da.products.map((d,index) => {
                       return (
-                          <img className='product-list-photos-img' src={ d.img } alt={ da.name } key={ index } />
+                          <img
+                            className='product-list-photos-img' 
+                            src={ d.img } 
+                            alt={ da.name } 
+                            key={ index } 
+                            onClick={ () => viewDetail(d.id)}
+                          />
                           )
                         })
                       }
