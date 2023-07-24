@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <div className="fade-in">
       <Header />
         {children}
-        <WhatsAppButton/>
+        <WhatsAppButton />
       <Footer />
     </div>
   );

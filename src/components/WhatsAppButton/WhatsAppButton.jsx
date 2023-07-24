@@ -9,6 +9,6 @@ export default function WhatsAppButton() {
     };
 
     return (
-        <BsWhatsapp data className="whatsapp-button" onClick={handleClick}></BsWhatsapp>
+        <BsWhatsapp data="ture" className="whatsapp-button" onClick={handleClick}></BsWhatsapp>
     )
 }

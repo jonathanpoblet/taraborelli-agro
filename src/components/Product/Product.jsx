@@ -7,7 +7,7 @@ export default function Product({data}) {
         {
           data.map((da,index) => {
             return (
-              <>
+              <React.Fragment key={ index }>
                 <div className='product-list-header'>
                   <h3 className='product-list-header-title'>{ da.name }</h3>
                 </div>
@@ -20,7 +20,7 @@ export default function Product({data}) {
                         })
                       }
                 </div>
-              </>
+              </React.Fragment>
             )
           })
         }
