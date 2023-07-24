@@ -88,7 +88,7 @@ export default function Footer() {
       </div>
 
       <div className='autor'>
-        <p className='autor-texto'>- KELLY - TODOS LOS DERECHOS RESERVADOS ®</p>
+        <p className='autor-texto'>® TARABORELLI AGRO</p>
       </div>
     </>
   )
