@@ -43,7 +43,11 @@ export default function Home() {
           {
             data.map((d,index) => {
               return (
-                <img src={d} alt='product' key={index} />
+                <img
+                  src={d} 
+                  alt='product' 
+                  key={index} 
+                />
               )
             })
           }
