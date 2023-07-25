@@ -10,7 +10,6 @@ export default function ContactSection() {
       email: "",
       tel: "",
       modelo: "",
-      sucursal: "",
     };
 
     const nombre = document.getElementById('nombre').value;
