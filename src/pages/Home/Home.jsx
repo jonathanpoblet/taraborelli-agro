@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setActivePage } from '../../app/state/globalSlice';
 import ContactSection from '../../components/ContactSection/ContactSection';
 import './home.css';
 
 export default function Home() {
+
+  const dispatch = useDispatch();
 
   const data = ['https://dealers.rewebmkt.com/images/20220318015940-mini.png', 'https://dealers.rewebmkt.com/images/20220318020623-mini.png', 'https://dealers.rewebmkt.com/images/20220908010040-mini.png', 'https://dealers.rewebmkt.com/images/20220318051258-mini.png']
 
@@ -12,7 +16,10 @@ export default function Home() {
         <img alt='banner' src='../../../public/assets/banner.png' />
         <div className='slide-in'>
           <h1>TARABORELLI<br></br> AGRO </h1>
-          <Link className='home-banner-div-link' to='/productos'>
+          <Link 
+            className='home-banner-div-link' 
+            to='/productos'
+            onClick={() => dispatch(setActivePage('PRODUCTOS'))}>
             VER PRODUCTOS
           </Link>
         </div>
@@ -37,7 +44,12 @@ export default function Home() {
       <section className='home-productos'>
         <div className='home-productos-head'>
           <h3>CONSULTA NUESTROS PRODUCTOS</h3>
-          <Link className='home-productos-head-link' to='/productos'>VER MÁS</Link>
+          <Link 
+            className='home-productos-head-link' 
+            to='/productos'
+            onClick={() => dispatch(setActivePage('PRODUCTOS'))}>
+            VER MÁS
+          </Link>
         </div>
         <div className='home-productos-photos'>
           {
