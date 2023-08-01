@@ -11,10 +11,6 @@ export default function Footer() {
     <>
       <footer id='footer' className='footer'>
         <div className='footer-container'>
-          <img id='footer-container-img' className='footer-container-img' src='../../../public/assets/k.png' alt='K'/>
-        </div>
-        
-        <div className='footer-container'>
           <h3 className='footer-container-title'>Chivilcoy</h3>
           <div className='footer-container-info'>
             <BsFillTelephoneFill className='footer-container-info-icon' />

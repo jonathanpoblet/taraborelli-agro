@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className='home fade-in'>
       <section className='home-banner'>
-        <img alt='banner' src='../../../public/assets/banner.png' />
+        <img alt='banner' src='./assets/banner.png' />
         <div className='slide-in'>
           <h1>TARABORELLI<br></br> AGRO </h1>
           <Link 

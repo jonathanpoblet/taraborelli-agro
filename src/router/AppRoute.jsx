@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "../components/Layout/Layout";
 
 const Home = lazy(() => import("../pages/Home/Home"));
@@ -13,18 +13,18 @@ const Spinner = lazy(() => import("../components/Spinner/Spinner"));
 export default function AppRoute() {
   return (
     <Suspense fallback={<Spinner />}>
-      <BrowserRouter>
+      <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route path="/nosotros" element={<AboutUs />} />
             <Route path="/productos" element={<Products />} />
-            <Route path="/productos/detalle" element={<Detail />} />
+            <Route path="/detalle" element={<Detail />} />
             <Route path="/usados" element={<Used />} />
             <Route path="/contacto" element={<Contact />} />
           </Routes>
         </Layout>
-      </BrowserRouter>
+      </Router>
     </Suspense>
   );
 }

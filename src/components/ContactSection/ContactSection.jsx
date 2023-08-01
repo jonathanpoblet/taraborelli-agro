@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 import './contactSection.css';
 
 export default function ContactSection() {
+
+  const navigate = useNavigate();
 
   const sendForm = () => {
     let form = {
@@ -40,7 +43,7 @@ export default function ContactSection() {
     setTimeout(() => {
       Swal.fire({title: 'Formulario enviado con exito', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
       setTimeout(() => {
-        location.reload();
+        navigate(`/`);
       }, 1500);
     }, 1500);
 
@@ -50,7 +53,7 @@ export default function ContactSection() {
   return (
     <>
       <section className='contact-section1'>
-        <img className='contact-section1-img' src='../../../public/assets/contact.png' alt='contact'/>
+        <img className='contact-section1-img' src='./assets/contact.png' alt='contact'/>
       </section>
       <section className='contactSection'>
         <article className='contactSection-article'>

@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import './product.css';
 
 export default function Product({data}) {
 
+  const navigate = useNavigate();
+
   const viewDetail = (id) => {
-    window.location.href = `http://localhost:5173/productos/detalle?id=${id}`;
+    navigate(`../detalle?id=${id}`);
   }
 
   return (

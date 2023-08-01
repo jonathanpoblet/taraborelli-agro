@@ -42,7 +42,7 @@ export default function Header() {
 
       <div className='header-search'>
         <Link to='/'>
-          <img onClick={() => changePage('INICIO')} className='header-search-img' src='../../../public/assets/taraborelli-agro-logo.png' alt='Kelly' />
+          <img onClick={() => changePage('INICIO')} className='header-search-img' src='./assets/taraborelli-agro-logo.png' alt='Kelly' />
         </Link>
         {
           mobileMenuOpen ? 

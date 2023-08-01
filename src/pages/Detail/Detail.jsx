@@ -41,7 +41,8 @@ export default function Detail() {
 
   }
   
-  const id = window.location.search.slice(4);
+  const urlParams = new URLSearchParams(window.location.hash.split('?')[1]);
+  const id = urlParams.get('id');
   const products = useSelector(state => state.products);
   let product;
   
