@@ -1,6 +1,6 @@
 # Taraborelli Agro
 
-![Taraborelli Agro](https://github.com/jonathanpoblet/taraborelli-agro/assets/106752020/7098dc56-a9e9-42dd-a2ca-a1387f0d2de0)
+![Taraborelli Agro](https://github.com/jonathanpoblet/taraborelli-agro/assets/106752020/bbd624ce-e74f-4483-aff5-76f2f6839e5c)
 
 ---
 
