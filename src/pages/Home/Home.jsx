@@ -8,7 +8,7 @@ export default function Home() {
 
   const dispatch = useDispatch();
 
-  const data = ['https://dealers.rewebmkt.com/images/20220318015940-mini.png', 'https://dealers.rewebmkt.com/images/20220318020623-mini.png', 'https://dealers.rewebmkt.com/images/20220908010040-mini.png', 'https://dealers.rewebmkt.com/images/20220318051258-mini.png']
+  const data = ['../../../public/assets/trucks/t5-s.png', '../../../public/assets/trucks/t6.png', '../../../public/assets/harvester/c4-5-85.png', '../../../public/assets/mixers/mgv-110f.png']
 
   return (
     <main className='home fade-in'>
@@ -28,15 +28,15 @@ export default function Home() {
         <h2 className='home-looking-title'>ENCONTRÁ LO QUE ESTÁS BUSCANDO</h2>
         <div className='home-looking-container'>
           <div>
-            <img src='https://elconstructor.com/wp-content/uploads/2022/05/tractor-New-Holland.jpg' alt='' />
+            <img src='../../../public/assets/home/home1.jpg' alt='Home 1' />
             <p>ENTREGA<br></br>INMEDIATA</p>
           </div>
           <div>
-            <img src='https://static.landwirt.com/3572-98cbe7d550898e136d0028120217f52c-3154973-0vb.jpg' alt='' />
+            <img src='../../../public/assets/home/home2.jpg' alt='Home 2' />
             <p>ATENCIÓN<br></br>PERSONALIZADA</p>
           </div>
           <div>
-            <img src='https://agrotecnica.online/wp-content/uploads/2021/07/New-Holland-launches-new-T7-Heavy-Duty_590561.jpg' alt='' />
+            <img src='../../../public/assets/home/home3.jpg' alt='Home 3' />
             <p>SERVICIO<br></br>POSTVENTA</p>
           </div>
         </div>

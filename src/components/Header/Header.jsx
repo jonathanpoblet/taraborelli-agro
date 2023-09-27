@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { setActivePage } from '../../app/state/globalSlice';
 
-import { AiOutlineInstagram, AiOutlineSearch,AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineInstagram, AiOutlineMenu } from 'react-icons/ai';
 import { BiLogoFacebook } from 'react-icons/bi';
 import { RxCross1 } from 'react-icons/rx';
 
@@ -68,11 +68,6 @@ export default function Header() {
           <li  className='header-nav-ul-li'>
             <Link onClick={() => changePage('PRODUCTOS')} className={ activeLink == 'PRODUCTOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/productos'>
               PRODUCTOS
-            </Link>
-          </li>
-          <li  className='header-nav-ul-li'>
-            <Link onClick={() => changePage('USADOS')} className={ activeLink == 'USADOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/usados'>
-              USADOS
             </Link>
           </li>
           <li  className='header-nav-ul-li'>

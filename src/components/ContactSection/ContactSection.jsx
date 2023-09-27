@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 import './contactSection.css';
@@ -59,9 +58,9 @@ export default function ContactSection() {
         <article className='contactSection-article'>
           <h2 className='contactSection-article-title'>CONTACTANOS</h2>
           <h3>No dudes en escribirnos</h3>
-          <p>Atención personalizada en todo momento para que puedas accedar a tu maquinaria agricola ya mismo</p><br></br>
-          <p>Atención personalizada en todo momento para que puedas accedar a tu maquinaria agricola ya mismo</p><br></br>
-          <p>Atención personalizada en todo momento para que puedas accedar a tu maquinaria agricola ya mismo</p>
+          <p>Atención personalizada en todo momento para que puedas accedar a tu maquinaria agricola ya mismo.</p><br></br>
+          <p>Garantizamos atención personalizada para acceder rápidamente a tu maquinaria agrícola. Tu satisfacción es nuestra prioridad.</p><br></br>
+          <p>En la agricultura, la confianza es clave. Ofrecemos asesoramiento y soporte constante para que tus proyectos avancen sin contratiempos.</p>
 
         </article>
         
