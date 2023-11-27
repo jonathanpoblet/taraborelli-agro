@@ -69,58 +69,58 @@ const products = [
       }
     ]
   },
-  {
-    name: 'COSECHADORAS',
-    products: [
-      {
-        img: './assets/harvester/c4-5-85.png',
-        id: '200',
-        name: 'CR 5.85',
-        info: 'La pionera tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los grandes cóncavos proporcionan un rozamiento suave en toda su longitud, grano a grano, con una gran fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y máxima calidad del grano.',
-        detail: 'El extraordinario sistema de limpieza de doble acción produce grano de alta calidad en cualquier tipo de cultivo, debido a su gran área de limpieza de grano. Es capaz de procesar un gran volumen de granos mediante el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza un flujo de aire uniforme a través de los tamices. La extrema eficiencia de trilla y separación y el eficiente sistema de limpieza mantienen la cantidad de relaves en el RC al mínimo.'
-      },
-      {
-        img: './assets/harvester/c4-evo.png',
-        id: '201',
-        name: 'CR EVO',
-        info: 'La exclusiva tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los cóncavos de grandes dimensiones realizan una fricción suave en toda su extensión, grano a grano, con elevada fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y la máxima calidad del grano.',
-        detail: 'El extraordinario sistema de limpieza de doble acción produce granos de alta calidad en cualquier tipo de cosecha, debido a su gran área de limpieza. Es capaz de procesar un gran volumen de granos, por el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza el flujo de aire homogéneo a través de los zarandas. La extrema eficacia de la trilla y la separación y el eficiente sistema de limpieza reducen al mínimo la cantidad de perdidas en la CR Evo.'
-      }
-    ]
-  },
-  {
-    name: 'MIXERS',
-    products: [
-      {
-        img: './assets/mixers/mg-100.png',
-        id: '300',
-        name: 'MG 100',
-        info: 'Mezclador y distribuidor de raciones de 10 m3 de capacidad. Mezclado a través de 3 sinfines horizontales. Está comandado por toma de potencia directa desde el tractor. La descarga del producto está accionada hidráulicamente integralmente desde la cabina del tractor. Equipado con balanza electrónica para una correcta formulación de las dietas.',
-        detail: 'Descarga por acción de 2 sinfines que garantizan una entrega pareja y una mezcla homogénea de la ración.',
-      },
-      {
-        img: './assets/mixers/mg-70.png',
-        id: '301',
-        name: 'MG 70',
-        info: 'Mezclador y distribuidor de raciones de 7 m3 de capacidad. Mezclado a través de 3 sinfines horizontales. Está comandado por toma de potencia directa desde el tractor. La descarga del producto es accionada integralmente desde la cabina del tractor en forma hidráulica. Equipado con balanza electrónica para una correcta formulación de las dietas.',
-        detail: 'Transmisión trasera por medio de cadenas a rodillos tratadas y de alta resistencia. Proveen una reducción de esfuerzos en la barra de mando. Menos potencia requerida.',
-      },
-      {
-        img: './assets/mixers/mgv-110f.png',
-        id: '302',
-        name: 'MGV 110F',
-        info: 'Mezclador y distribuidor de raciones de tipo vertical DE 11 m3 de capacidad. El mezclado se produce por un sinfín cónico de paso variable de tipo vertical. Está dotado de cuchillas que permiten el desmenuzado de rollos y fardos prismáticos. La descarga es a través de noria. Totalmente comandado desde el tractor.',
-        detail: 'Sinfín único en su estilo por su agresividad en rollos y fardos prismáticos. Dotado de cuchillas dentadas construidas de materiales bonificados tratados térmicamente y respaldadas con carburo de tungsteno (auto afilables).',
-      },
-      {
-        img: './assets/mixers/mgv-150f.png',
-        id: '303',
-        name: 'MGV 150F',
-        info: 'Mezclador y distribuidor de raciones de tipo vertical de 14 m3 de capacidad. El mezclado se produce por un sinfín cónico de paso variable de tipo vertical. Está dotado de cuchillas que permiten el desmenuzado de rollos y fardos prismáticos. La descarga es a través de noria. Totalmente comandado desde el tractor.',
-        detail: 'Puerta especialmente diseñada para trabajar en el mismo plano que las paredes de la tolva., Única en el mundo, que garantiza la excelencia en el mezclado. Sistema propio y único del mercado.',
-      }
-    ]
-  }
+  // {
+  //   name: 'COSECHADORAS',
+  //   products: [
+  //     {
+  //       img: './assets/harvester/c4-5-85.png',
+  //       id: '200',
+  //       name: 'CR 5.85',
+  //       info: 'La pionera tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los grandes cóncavos proporcionan un rozamiento suave en toda su longitud, grano a grano, con una gran fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y máxima calidad del grano.',
+  //       detail: 'El extraordinario sistema de limpieza de doble acción produce grano de alta calidad en cualquier tipo de cultivo, debido a su gran área de limpieza de grano. Es capaz de procesar un gran volumen de granos mediante el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza un flujo de aire uniforme a través de los tamices. La extrema eficiencia de trilla y separación y el eficiente sistema de limpieza mantienen la cantidad de relaves en el RC al mínimo.'
+  //     },
+  //     {
+  //       img: './assets/harvester/c4-evo.png',
+  //       id: '201',
+  //       name: 'CR EVO',
+  //       info: 'La exclusiva tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los cóncavos de grandes dimensiones realizan una fricción suave en toda su extensión, grano a grano, con elevada fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y la máxima calidad del grano.',
+  //       detail: 'El extraordinario sistema de limpieza de doble acción produce granos de alta calidad en cualquier tipo de cosecha, debido a su gran área de limpieza. Es capaz de procesar un gran volumen de granos, por el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza el flujo de aire homogéneo a través de los zarandas. La extrema eficacia de la trilla y la separación y el eficiente sistema de limpieza reducen al mínimo la cantidad de perdidas en la CR Evo.'
+  //     }
+  //   ]
+  // },
+  // {
+  //   name: 'FORRAJES',
+  //   products: [
+  //     {
+  //       img: './assets/mixers/mg-100.png',
+  //       id: '300',
+  //       name: 'MG 100',
+  //       info: 'Mezclador y distribuidor de raciones de 10 m3 de capacidad. Mezclado a través de 3 sinfines horizontales. Está comandado por toma de potencia directa desde el tractor. La descarga del producto está accionada hidráulicamente integralmente desde la cabina del tractor. Equipado con balanza electrónica para una correcta formulación de las dietas.',
+  //       detail: 'Descarga por acción de 2 sinfines que garantizan una entrega pareja y una mezcla homogénea de la ración.',
+  //     },
+  //     {
+  //       img: './assets/mixers/mg-70.png',
+  //       id: '301',
+  //       name: 'MG 70',
+  //       info: 'Mezclador y distribuidor de raciones de 7 m3 de capacidad. Mezclado a través de 3 sinfines horizontales. Está comandado por toma de potencia directa desde el tractor. La descarga del producto es accionada integralmente desde la cabina del tractor en forma hidráulica. Equipado con balanza electrónica para una correcta formulación de las dietas.',
+  //       detail: 'Transmisión trasera por medio de cadenas a rodillos tratadas y de alta resistencia. Proveen una reducción de esfuerzos en la barra de mando. Menos potencia requerida.',
+  //     },
+  //     {
+  //       img: './assets/mixers/mgv-110f.png',
+  //       id: '302',
+  //       name: 'MGV 110F',
+  //       info: 'Mezclador y distribuidor de raciones de tipo vertical DE 11 m3 de capacidad. El mezclado se produce por un sinfín cónico de paso variable de tipo vertical. Está dotado de cuchillas que permiten el desmenuzado de rollos y fardos prismáticos. La descarga es a través de noria. Totalmente comandado desde el tractor.',
+  //       detail: 'Sinfín único en su estilo por su agresividad en rollos y fardos prismáticos. Dotado de cuchillas dentadas construidas de materiales bonificados tratados térmicamente y respaldadas con carburo de tungsteno (auto afilables).',
+  //     },
+  //     {
+  //       img: './assets/mixers/mgv-150f.png',
+  //       id: '303',
+  //       name: 'MGV 150F',
+  //       info: 'Mezclador y distribuidor de raciones de tipo vertical de 14 m3 de capacidad. El mezclado se produce por un sinfín cónico de paso variable de tipo vertical. Está dotado de cuchillas que permiten el desmenuzado de rollos y fardos prismáticos. La descarga es a través de noria. Totalmente comandado desde el tractor.',
+  //       detail: 'Puerta especialmente diseñada para trabajar en el mismo plano que las paredes de la tolva., Única en el mundo, que garantiza la excelencia en el mezclado. Sistema propio y único del mercado.',
+  //     }
+  //   ]
+  // }
 ]
 
 export const productsSlice = createSlice({

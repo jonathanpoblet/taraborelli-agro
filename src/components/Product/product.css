@@ -26,10 +26,21 @@
     border-right: 1px solid #dbdbdb;
 }
 
-.product-list-photos-img {
-    width: 20%;
-    transition: 0.5s;
+.product-list-photos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 20%;
+    margin-top: 15px;
+    margin-bottom: 15px;
     cursor: pointer;
+}
+
+.product-list-photos-img {
+    width: 100%;
+    transition: 0.5s;
 }
 
 .product-list-photos-img:hover {

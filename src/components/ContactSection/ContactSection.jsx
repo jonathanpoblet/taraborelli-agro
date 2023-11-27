@@ -35,6 +35,7 @@ export default function ContactSection() {
     if(email) form = {...form, email}
     if(usado) form = {...form, usado}
     if(modelo) form = {...form, modelo}
+    // eslint-disable-next-line no-unused-vars
     if(mensaje) form = {...form, mensaje}
 
     Swal.fire({title: 'Enviando...', showCloseButton: 'false' ,confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});

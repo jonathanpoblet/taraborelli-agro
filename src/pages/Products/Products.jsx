@@ -1,5 +1,4 @@
 import Product from '../../components/Product/Product';
-import React from 'react';
 
 import './products.css';
 import { useSelector } from 'react-redux';

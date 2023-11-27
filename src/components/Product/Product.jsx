@@ -2,9 +2,11 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import './product.css';
 
-export default function Product({data}) {
+// eslint-disable-next-line react/prop-types
+export default function Product({ data }) {
 
   const navigate = useNavigate();
+
 
   const viewDetail = (id) => {
     navigate(`../detalle?id=${id}`);
@@ -13,6 +15,7 @@ export default function Product({data}) {
   return (
     <section className='product-list fade-in'>
         {
+          // eslint-disable-next-line react/prop-types
           data.map((da,index) => {
             return (
               <React.Fragment key={ index }>
@@ -23,13 +26,15 @@ export default function Product({data}) {
                   {
                     da.products.map((d,index) => {
                       return (
-                          <img
-                            className='product-list-photos-img' 
-                            src={ d.img } 
-                            alt={ da.name } 
-                            key={ index } 
-                            onClick={ () => viewDetail(d.id)}
-                          />
+                          <div onClick={ () => viewDetail(d.id)} key={ d.id } className='product-list-photos-container'>
+                            <img
+                              className='product-list-photos-img' 
+                              src={ d.img } 
+                              alt={ da.name } 
+                              key={ index } 
+                            />
+                            <p>{ d.name }</p>
+                          </div>
                           )
                         })
                       }
