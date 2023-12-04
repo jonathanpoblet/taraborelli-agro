@@ -3,12 +3,36 @@ import { useDispatch } from 'react-redux';
 import { setActivePage } from '../../app/state/globalSlice';
 import ContactSection from '../../components/ContactSection/ContactSection';
 import './home.css';
+import LookingCard from '../../components/LookingCard/LookingCard';
 
 export default function Home() {
 
   const dispatch = useDispatch();
 
-  const data = ['./assets/trucks/t5-s.png', './assets/trucks/t6.png', './assets/harvester/c4-5-85.png', './assets/mixers/mgv-110f.png']
+  const lookingData = [
+    {
+      path: '/productos',
+      img: './assets/home/home1.jpg' ,
+      title:'ENTREGA INMEDIATA',
+    },
+    {
+      path: '/usados',
+      img: './assets/home/home2.jpg' ,
+      title:'USADOS',
+    },    
+    {
+      path: '/postventa',
+      img: './assets/home/home3.jpg' ,
+      title:'SERVICIO POSTVENTA',
+    },    
+    {
+      path: '/agricultura-de-precision',
+      img: './assets/home/home4.jpg' ,
+      title:'AGRICULTURA DE PRECISIÓN',
+    },
+  ]
+
+  const data = ['./assets/trucks/t5-s.png', './assets/trucks/t6.png', './assets/harvester/c4-5-85.png', './assets/mixers/mgv-110f.png'];
 
   return (
     <main className='home fade-in'>
@@ -27,18 +51,18 @@ export default function Home() {
       <section className='home-looking'>
         <h2 className='home-looking-title'>ENCONTRÁ LO QUE ESTÁS BUSCANDO</h2>
         <div className='home-looking-container'>
-          <div>
-            <img src='./assets/home/home1.jpg' alt='Home 1' />
-            <p>ENTREGA<br></br>INMEDIATA</p>
-          </div>
-          <div>
-            <img src='./assets/home/home2.jpg' alt='Home 2' />
-            <p>ATENCIÓN<br></br>PERSONALIZADA</p>
-          </div>
-          <div>
-            <img src='./assets/home/home3.jpg' alt='Home 3' />
-            <p>SERVICIO<br></br>POSTVENTA</p>
-          </div>
+          {
+            lookingData.map((data,index) => {
+              return (
+                <LookingCard 
+                  key={index}
+                  path= { data.path }
+                  img= { data.img }
+                  title={ data.title }
+                />
+              )
+            })
+          }
         </div>
       </section>
       <section className='home-productos'>

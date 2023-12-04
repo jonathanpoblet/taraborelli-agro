@@ -67,10 +67,11 @@
 }
 
 .home-looking {
-    width: 1100px;
+    width: 1200px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 40px;
 }
@@ -89,7 +90,17 @@
     width: 100%;
 }
 
-.home-looking-container div {
+.home-looking-container a {
+    transition: 0.5s;
+    text-decoration: none;
+
+}
+
+.home-looking-container a:hover {
+    opacity: 0.8;
+}
+
+.home-looking-container a div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,19 +109,19 @@
     box-shadow: 2px 2px 10px 2px #cfcfcf;
 }
 
-.home-looking-container div img {
+.home-looking-container a div img {
     height: 270px;
-    width: 230px;
+    width: 250px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.home-looking-container div p {
+.home-looking-container a div p {
     width: 100%;
     background-color: #004994;
     color: #fff;
     text-align: center;
-    padding: 10px 5px;
+    padding: 15px 5px;
     font-size: 15px;
     font-weight: 500;
     border-bottom-left-radius: 5px;
@@ -178,10 +189,18 @@
     transform: scale(1.2)
 }
 
-@media screen and (max-width: 1200px) {
-    .home-looking {
-        width: 800px;
+@media screen and (max-width: 1300px) {
+    .home-looking-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 700px;
     }
+
+    .home-looking-container div {
+        margin: 15px 40px;
+    }
+
+
 }
 
 @media screen and (max-width: 1020px) {
@@ -191,15 +210,6 @@
 }
 
 @media screen and (max-width: 850px) {
-    .home-looking-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .home-looking-container div {
-        margin: 15px 40px;
-    }
-
     .home-banner div h1 {
         color: #fff;
         text-shadow: 1px 1px 1px #111;
@@ -232,7 +242,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     .home-looking-container {
         flex-direction: column;
     }
