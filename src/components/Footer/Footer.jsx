@@ -1,87 +1,31 @@
-import React, { useState } from 'react';
-
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
 import { MdLocationOn } from 'react-icons/md';
 
 import './footer.css';
 
 export default function Footer() {
-  const [footerOpen, setFooterOpen] = useState(false)
   return (
     <>
+      <div className='map-container'>
+        <h3>VENI A VISITARNOS!</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13221.53085110048!2d-60.0977978!3d-34.0597023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b99d1fe459e2b9%3A0x36fe348970541600!2sTaraborelli%20Agro%20-%20Concesionario%20New%20Holland!5e0!3m2!1ses-419!2sar!4v1701787551739!5m2!1ses-419!2sar" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <footer id='footer' className='footer'>
         <div className='footer-container'>
-          <h3 className='footer-container-title'>Chivilcoy</h3>
           <div className='footer-container-info'>
-            <BsFillTelephoneFill className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>Tel: 02342 – 480359</h4>
+            <MdLocationOn className='footer-container-info-icon' />
+            <h4 className='footer-container-info-text'>Km 175,5, B2740 Arrecifes</h4>
           </div>
           <div className='footer-container-info'>
             <BsFillEnvelopeFill className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>De 8hs. a 19hs.</h4>
+            <h4 className='footer-container-info-text'>taraborelliagro@gmail.com</h4>
           </div>
-          <div className='footer-container-info'>
-            <MdLocationOn className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>Ruta Nac. Nº 5 – Km.154.5</h4>
-          </div>
-        </div>
-
-        <div className='footer-container'>
-          <h3 className='footer-container-title'>BRAGADO</h3>
           <div className='footer-container-info'>
             <BsFillTelephoneFill className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>Tel: 02342 – 430803</h4>
-          </div>
-          <div className='footer-container-info'>
-            <BsFillEnvelopeFill className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>De 8hs. a 19hs.</h4>
-          </div>
-          <div className='footer-container-info'>
-            <MdLocationOn className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>Ruta Nac. Nº 5 – Km. 209.5</h4>
-          </div>
-        </div>
-
-        <div className='footer-container'>
-          <h3 className='footer-container-title'>ALBERTI</h3>
-          <div className='footer-container-info'>
-            <BsFillTelephoneFill className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>Tel: 02346 – 470995</h4>
-          </div>
-          <div className='footer-container-info'>
-            <BsFillEnvelopeFill className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>De 8hs. a 12hs. y de 15hs. a 19hs.</h4>
-          </div>
-          <div className='footer-container-info'>
-            <MdLocationOn className='footer-container-info-icon' />
-            <h4 className='footer-container-info-text'>Ruta Nac. Nº 5 – Km. 190</h4>
+            <h4 className='footer-container-info-text'>02346 – 470995</h4>
           </div>
         </div>
       </footer>
-
-      {
-        footerOpen &&
-          <div className='footer-mobile'>
-            <ul className='footer-mobile-ul'>
-              <li className='footer-mobile-ul-li'>
-                <a className='footer-mobile-ul-li-a' href='tel:2342480359'>Chivilcoy: 2342 - 480359</a>
-              </li>
-              <li className='footer-mobile-ul-li'>
-                <a className='footer-mobile-ul-li-a' href='tel:2346470995'>Alberti: 2346 - 470995</a>
-              </li>
-              <li className='footer-mobile-ul-li'>
-                <a className='footer-mobile-ul-li-a' href='tel:2342430803'>Bragado: 2342 - 430803</a>
-              </li>
-            </ul>
-          </div>
-      }
-
-      <div className='footer-mob'>
-        <BsFillTelephoneFill
-          className='footer-mob-button'
-          onClick={() => setFooterOpen(!footerOpen)}
-        />
-      </div>
 
       <div className='autor'>
         <p className='autor-texto'>® TARABORELLI AGRO</p>
