@@ -11,30 +11,28 @@ export default function ContactSection() {
       nombre: "",
       email: "",
       tel: "",
-      modelo: "",
+      localidad: "",
     };
 
     const nombre = document.getElementById('nombre').value;
     const apellido = document.getElementById('apellido').value;
     const tel = document.getElementById('tel').value;
     const email = document.getElementById('email').value;
-    const usado = document.getElementById('usado').value;
-    const modelo = document.getElementById('modelo').value;
+    const localidad = document.getElementById('localidad').value;
     const mensaje = document.getElementById('mensaje').value;
 
     if(!nombre) return Swal.fire({title: 'Ingresa un nombre', confirmButtonText: 'OK',confirmButtonColor: '#000',  customClass: { popup: 'custom-background', title: 'custom-title' }});
     if(!apellido) return Swal.fire({title: 'Ingresa un apellido', confirmButtonText: 'OK',confirmButtonColor: '#000',  customClass: { popup: 'custom-background', title: 'custom-title' }});
     if(!tel) return Swal.fire({title: 'Ingresa un telefono', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
     if(!email) return Swal.fire({title: 'Ingresa un email', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
-    if(!modelo) return Swal.fire({title: 'Ingresa el modelo que buscas', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
+    if(!localidad) return Swal.fire({title: 'Ingresa tu localidad', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
     if(!mensaje) return Swal.fire({title: 'Ingresa su consulta', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
 
     if(nombre) form = {...form, nombre}
     if(apellido) form = {...form, apellido}
     if(tel) form = {...form, tel}
     if(email) form = {...form, email}
-    if(usado) form = {...form, usado}
-    if(modelo) form = {...form, modelo}
+    if(localidad) form = {...form, localidad}
     // eslint-disable-next-line no-unused-vars
     if(mensaje) form = {...form, mensaje}
 
@@ -72,8 +70,7 @@ export default function ContactSection() {
             <input id='apellido' className='contactSection-article2-form-input' type='text' placeholder='Apellido'/>
             <input id='tel' className='contactSection-article2-form-input' type='text' placeholder='Teléfono'/>
             <input id='email' className='contactSection-article2-form-input' type='text' placeholder='Correo'/>
-            <input id='usado' className='contactSection-article2-form-input' type='text' placeholder='¿Tienes Auto Usado?'/>
-            <input id='modelo' className='contactSection-article2-form-input' type='text' placeholder='¿Qué modelo estas buscando?'/>
+            <input id='localidad' className='contactSection-article2-form-input' type='text' placeholder='Localidad'/>
             <textarea id='mensaje' className='contactSection-article2-form-textarea' placeholder='Mensaje'>
 
             </textarea>
