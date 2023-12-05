@@ -9,15 +9,19 @@ export default function AboutUs() {
           <article className='main-us-article'>
             <img className='main-us-article-img' src='./assets/truck.jpeg'/>
             <div className='main-us-article-container'>
-              <p>Somos una empresa familiar con más de 20 años de experiencia en el rubro de la <b>maquinaria agrícola</b>, comprometida con la entrega de soluciones integrales.<br/><br/>Nuestro líder Gabriel Kelly cuenta con más de 40 años de compromiso y experiencia en el sector agropecuario. Su socio estratégico Gabriel Romano, sumó a la fuerza de venta, el conocimiento y dedicación intensa de la posventa, y juntos conformaron la empresa Gabriel E. Kelly y Cia. S.A.</p>
-              <p>Durante más de diez años la compañía se convirtió en concesionario oficial de maquinaria agrícola de una reconocida multinacional. Dentro de sus marcas comercializadas se destaca la empresa Bertini en sembradoras.<br/><br/>Actualmente, y luego de un proceso de reinvención, Kelly se convierte en concesionario oficial New Holland. Un nuevo desafío que nos permite continuar fortaleciendo nuestra pasión por la venta y <b>la cercanía con nuestro cliente</b>.</p>
+              <p>Somos una empresa parte de <b>Grupo Taraborelli</b> con más de 35 años de historia, las más importantes marcas del mercado confían en nosotros es por eso que somos Concesionario Oficial New Holland , contamos con un equipo de profesionales, con un fuerte Dinamismo y gran adaptabilidad a las circunstancias de mercado y siempre orientado al cliente para brindar soluciones personalizadas.</p><br></br>
+              <p>Nos destacamos por:</p><br></br>
+              <p>• Calidad y Atención personalizada</p><br></br>
+              <p>• Planes y herramientas de financiación que se adaptan a las necesidades de cada cliente</p><br></br>
+              <p>• Amplio stock de maquinaria y repuestos para brindarte la mejor atención</p><br></br>
+              <p>• Amplia cobertura de zona para estar siempre cerca tuyo</p>
             </div>
           </article>
       </section>
       <section className="main-info">
         <article className="main-info-article">
 
-          <h2>ELEGÍ NEW HOLLAND</h2>
+          <h2>ELEGÍ TARABORELLI AGRO</h2>
           <h4>Te brindamos las mejores condiciones para que puedas adquirir tu producto</h4>
 
           <div className="main-info-article-container">
