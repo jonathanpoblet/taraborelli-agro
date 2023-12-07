@@ -7,6 +7,7 @@ const AboutUs = lazy(() => import("../pages/AboutUs/AboutUs"));
 const Products = lazy(() => import("../pages/Products/Products"));
 const Detail = lazy(() => import("../pages/Detail/Detail"));
 const Contact = lazy(() => import("../pages/Contact/Contact"));
+const JoinUs = lazy(() => import("../pages/JoinUs/JoinUs"));
 const AfterSales = lazy(() => import("../pages/AfterSales/AfterSales"));
 const Used = lazy(() => import("../pages/Used/Used"));
 const PrecisionFarming = lazy(() => import("../pages/PrecisionFarming/PrecisionFarming"));
@@ -25,6 +26,7 @@ export default function AppRoute() {
             <Route path="/postventa" element={<AfterSales />} />
             <Route path="/usados" element={<Used />} />
             <Route path="/agricultura-de-precision" element={<PrecisionFarming />} />
+            <Route path="/sumate" element={<JoinUs />} />
             <Route path="/contacto" element={<Contact />} />
           </Routes>
         </Layout>

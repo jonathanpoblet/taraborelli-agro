@@ -60,32 +60,37 @@ export default function Header() {
               INICIO
             </Link>
           </li>
-          <li  className='header-nav-ul-li'>
+          <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('NOSOTROS')} className={ activeLink == 'NOSOTROS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/nosotros'>
               NOSOTROS
             </Link>
           </li>
-          <li  className='header-nav-ul-li'>
+          <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('PRODUCTOS')} className={ activeLink == 'PRODUCTOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/productos'>
               PRODUCTOS
             </Link>
           </li>
-          <li  className='header-nav-ul-li'>
+          <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('USADOS')} className={ activeLink == 'USADOS' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/usados'>
               USADOS
             </Link>
           </li>
-          <li  className='header-nav-ul-li'>
+          <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('POSTVENTA')} className={ activeLink == 'POSTVENTA' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/postventa'>
               POSTVENTA
             </Link>
           </li>
-          <li  className='header-nav-ul-li'>
+          <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('AGRICULTURA DE PRECISIÓN')} className={ activeLink == 'AGRICULTURA DE PRECISIÓN' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/agricultura-de-precision'>
               AGRICULTURA DE PRECISIÓN
             </Link>
           </li>
-          <li  className='header-nav-ul-li'>
+          <li className='header-nav-ul-li'>
+            <Link onClick={() => changePage('SUMATE')} className={ activeLink == 'SUMATE' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/sumate'>
+              SUMATE
+            </Link>
+          </li>
+          <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('CONTACTO')} className={ activeLink == 'CONTACTO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/contacto'>
               CONTACTO
             </Link>
