@@ -1,0 +1,35 @@
+.used {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.used-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+.used-info h1 {
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1150px) {
+    .used {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .used-info {
+        margin-left: 0px;
+    }
+
+    .used-info h1, .used-info p {
+        text-align: center;
+    }
+}
