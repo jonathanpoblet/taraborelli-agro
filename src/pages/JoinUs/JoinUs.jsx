@@ -13,7 +13,7 @@ export default function JoinUs() {
     <main className='join'>
       <section className="join-info">
         <article className="join-info-article">
-          <h1>Potenciá tu talento en nuestro equipo</h1>
+          {/* <h1>Potenciá tu talento en nuestro equipo</h1> */}
 
           <p>¡Bienvenido a <b>Taraborelli Agro!</b> Estamos emocionados de que estés considerando unirte a nosotros para experimentar el mundo innovador de la maquinaria agrícola de vanguardia. Al sumarte a nuestra comunidad, te convertirás en parte de una red apasionada de agricultores y profesionales comprometidos con la excelencia en el campo.</p>
           <br></br>

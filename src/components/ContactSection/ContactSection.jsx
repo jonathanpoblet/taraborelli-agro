@@ -50,10 +50,6 @@ export default function ContactSection() {
 
   return (
     <>
-      
-      <section className='contact-section1'>
-        <img className='contact-section1-img' src='./assets/contact.png' alt='contact'/>
-      </section>
       <section className='contactSection'>
         <article className='contactSection-article'>
           <h2 className='contactSection-article-title'>CONTACTANOS</h2>

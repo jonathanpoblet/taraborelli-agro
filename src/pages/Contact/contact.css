@@ -1,3 +1,7 @@
+p {
+    margin-bottom: 0px !important;
+}
+
 .contact {
     width: 100%;
     display: flex;
@@ -5,6 +9,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    overflow-x: hidden;
 }
 
 .contact-section1 {

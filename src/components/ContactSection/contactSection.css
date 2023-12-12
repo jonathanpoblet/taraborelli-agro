@@ -40,6 +40,7 @@
     border-radius: 2px;
     height: 100%;
     box-shadow: 1px 1px 2px 1px rgb(245, 245, 245);
+    z-index: 1000 !important;
 }
 
 .contactSection-article {
@@ -48,7 +49,7 @@
     flex-direction: column;
     width: 40%;
     background-color: #FFDA00;
-    height: 400px;
+    height: 460px;
     color: #011529;
 }
 
