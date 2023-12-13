@@ -1,3 +1,7 @@
+p {
+    margin-bottom: 0px;
+}
+
 .soon {
     display: flex;
     flex-direction: column;

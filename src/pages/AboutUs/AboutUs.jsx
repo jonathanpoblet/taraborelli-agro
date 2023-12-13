@@ -10,11 +10,11 @@ export default function AboutUs() {
             <img className='main-us-article-img' src='./assets/truck.jpeg'/>
             <div className='main-us-article-container'>
               <p>Somos una empresa parte de <b>Grupo Taraborelli</b> con más de 35 años de historia, las más importantes marcas del mercado confían en nosotros es por eso que somos Concesionario Oficial New Holland , contamos con un equipo de profesionales, con un fuerte Dinamismo y gran adaptabilidad a las circunstancias de mercado y siempre orientado al cliente para brindar soluciones personalizadas.</p><br></br>
-              <p>Nos destacamos por:</p><br></br>
-              <p>• Calidad y Atención personalizada</p><br></br>
-              <p>• Planes y herramientas de financiación que se adaptan a las necesidades de cada cliente</p><br></br>
-              <p>• Amplio stock de maquinaria y repuestos para brindarte la mejor atención</p><br></br>
-              <p>• Amplia cobertura de zona para estar siempre cerca tuyo</p>
+              <p style={{marginBottom: 10}}>Nos destacamos por:</p>
+              <p style={{marginBottom: 10}}>• Calidad y Atención personalizada</p>
+              <p style={{marginBottom: 10}}>• Planes y herramientas de financiación que se adaptan a las necesidades de cada cliente</p>
+              <p style={{marginBottom: 10}}>• Amplio stock de maquinaria y repuestos para brindarte la mejor atención</p>
+              <p style={{marginBottom: 10}}>• Amplia cobertura de zona para estar siempre cerca tuyo</p>
             </div>
           </article>
       </section>

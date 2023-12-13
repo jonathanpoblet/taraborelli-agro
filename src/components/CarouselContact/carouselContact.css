@@ -1,0 +1,16 @@
+.carouselContact {
+    z-index: 10 !important;
+    margin-bottom: -350px !important;
+}
+
+@media screen and (max-width: 1300px) {
+    .carouselContact {
+        margin-bottom: -150px !important;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .carouselContact {
+        margin-bottom: 100px !important;
+    }
+}

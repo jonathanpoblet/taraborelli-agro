@@ -1,3 +1,7 @@
+p {
+    margin-bottom: 0px;
+}
+
 .slide-in {
     position: relative;
     animation: slide-in 1.5s ease forwards;

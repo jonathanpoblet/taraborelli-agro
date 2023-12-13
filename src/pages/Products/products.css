@@ -1,3 +1,7 @@
+p {
+    margin-bottom: 0px;
+}
+
 .product {
     width: 100%;
     display: flex;

@@ -13,21 +13,25 @@ export default function Home() {
     {
       path: '/productos',
       img: './assets/home/home1.jpg' ,
+      page: 'PRODUCTOS',
       title:'ENTREGA INMEDIATA',
     },
     {
       path: '/usados',
       img: './assets/home/home2.jpg' ,
+      page: 'USADOS',
       title:'USADOS',
     },    
     {
       path: '/postventa',
       img: './assets/home/home3.jpg' ,
-      title:'SERVICIO POSTVENTA',
+      page: 'POSTVENTA',
+      title:'POSTVENTA',
     },    
     {
       path: '/agricultura-de-precision',
       img: './assets/home/home4.jpg' ,
+      page: 'AGRICULTURA DE PRECISIÓN',
       title:'AGRICULTURA DE PRECISIÓN',
     },
   ]
@@ -57,6 +61,7 @@ export default function Home() {
                 <LookingCard 
                   key={index}
                   path= { data.path }
+                  page = { data.page }
                   img= { data.img }
                   title={ data.title }
                 />
@@ -65,9 +70,9 @@ export default function Home() {
           }
         </div>
       </section>
-      <section className='home-productos'>
+      <section className='home-productos' style={{marginBottom: 100}}>
         <div className='home-productos-head'>
-          <h3>CONSULTA NUESTROS PRODUCTOS</h3>
+          <h3 style={{marginBottom: 0}}>CONSULTA NUESTROS PRODUCTOS</h3>
           <Link 
             className='home-productos-head-link' 
             to='/productos'

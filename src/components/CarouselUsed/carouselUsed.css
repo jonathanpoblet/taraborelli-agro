@@ -3,3 +3,10 @@
     height: 500px;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    .carouselUsed {
+        width: 85%;
+        height: auto;
+    }
+}

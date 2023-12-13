@@ -1,8 +1,11 @@
+p {
+    margin-bottom: 0px;
+}
+
 .used {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin-top: 100px;
 }
 
@@ -19,17 +22,37 @@
     font-size: 35px;
 }
 
+.used-info p {
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1150px) {
     .used {
         flex-direction: column;
+        align-items: center;
         margin-top: 50px;
     }
 
     .used-info {
         margin-left: 0px;
+        align-items: center;
+        height: auto;
     }
 
     .used-info h1, .used-info p {
         text-align: center;
+    }
+
+    .used-info h1 {
+        margin-top: 70px;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    .used-info {
+        width: 85%;
+        height: auto;
     }
 }
