@@ -1,0 +1,62 @@
+.aftersales-cards-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: rgb(245, 245, 245);
+    margin: 30px;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px rgb(177, 177, 177);
+}
+
+.aftersales-cards-card svg {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.aftersales-cards-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #FFDA00;
+}
+
+.aftersales-cards-card p {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.aftersales-cards-card button {
+    padding: 12px 15px;
+    background-color: #FFDA00;
+    color: #111;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.aftersales-cards-card button:hover {
+    background-color: #ebc700;
+}
+
+@media screen and (max-width: 1024px) {
+    .aftersales-cards-card {
+        margin: 20px;
+        margin-top: 70px;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .aftersales-cards-card {
+        margin: 20px;
+        margin-top: 70px;
+        width: 300px;
+    }
+}

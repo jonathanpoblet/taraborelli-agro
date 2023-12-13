@@ -49,8 +49,12 @@
     flex-direction: column;
     width: 40%;
     background-color: #FFDA00;
-    height: 460px;
+    height: 100%;
     color: #011529;
+}
+
+.contactSection-article p {
+    margin-bottom: 15px;
 }
 
 .contactSection-article h2 {
@@ -82,7 +86,7 @@
 
 .contactSection-article2 {
     width: 60%;
-    padding: 25px;
+    padding: 0px 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -90,8 +94,9 @@
 
 .contactSection-article2-title {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-left: 10px;
+    margin-top: 30px;
 }
 
 .contactSection-article2-form {
