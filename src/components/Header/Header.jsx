@@ -81,11 +81,6 @@ export default function Header() {
             </Link>
           </li>
           <li className='header-nav-ul-li'>
-            <Link onClick={() => changePage('AGRICULTURA DE PRECISIÓN')} className={ activeLink == 'AGRICULTURA DE PRECISIÓN' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/agricultura-de-precision'>
-              AGRICULTURA DE PRECISIÓN
-            </Link>
-          </li>
-          <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('SUMATE')} className={ activeLink == 'SUMATE' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/sumate'>
               SUMATE
             </Link>
