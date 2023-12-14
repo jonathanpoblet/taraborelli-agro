@@ -10,6 +10,7 @@ const Contact = lazy(() => import("../pages/Contact/Contact"));
 const JoinUs = lazy(() => import("../pages/JoinUs/JoinUs"));
 const AfterSales = lazy(() => import("../pages/AfterSales/AfterSales"));
 const Used = lazy(() => import("../pages/Used/Used"));
+const News = lazy(() => import("../pages/News/News"));
 const Spinner = lazy(() => import("../components/Spinner/Spinner"));
 
 export default function AppRoute() {
@@ -25,6 +26,7 @@ export default function AppRoute() {
             <Route path="/postventa" element={<AfterSales />} />
             <Route path="/usados" element={<Used />} />
             <Route path="/sumate" element={<JoinUs />} />
+            <Route path="/novedades" element={<News />} />
             <Route path="/contacto" element={<Contact />} />
           </Routes>
         </Layout>

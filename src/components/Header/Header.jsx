@@ -86,6 +86,11 @@ export default function Header() {
             </Link>
           </li>
           <li className='header-nav-ul-li'>
+            <Link onClick={() => changePage('NOVEDADES')} className={ activeLink == 'NOVEDADES' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/novedades'>
+              NOVEDADES
+            </Link>
+          </li>
+          <li className='header-nav-ul-li'>
             <Link onClick={() => changePage('CONTACTO')} className={ activeLink == 'CONTACTO' ? 'header-nav-ul-li-link-active' : 'header-nav-ul-li-link' } to='/contacto'>
               CONTACTO
             </Link>
