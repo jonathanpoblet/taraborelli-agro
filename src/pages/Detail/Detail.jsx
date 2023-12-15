@@ -1,8 +1,21 @@
 import Swal from 'sweetalert2';
 import { useSelector } from 'react-redux';
 import './detail.css';
+import CarouselDetail from '../../components/CarouselDetail/CarouselDetail';
 
 export default function Detail() {
+
+  const handleDownload = (path,filename) => {
+    if(path === null) return Swal.fire({title: 'Este producto no cuenta con ficha técnica actualmente', confirmButtonText: 'OK',confirmButtonColor: '#000',  customClass: { popup: 'custom-background', title: 'custom-title' }});
+    const pdfPath = path;
+
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.target = '_blank';
+    link.download = filename + '-ficha-tecnica';
+
+    link.click();
+  };
 
   const sendForm = () => {
     let form = {
@@ -58,7 +71,7 @@ export default function Detail() {
       </section>
 
       <section className='detail-principal'>
-        <img className='detail-principal-img' src={ product.img } alt={ product.name } />
+        <CarouselDetail srcs={ product.images } />
         <form className='detail-principal-form'>
           <h3 className='detail-principal-form-title'>CONSULTANOS</h3>
           <input id='nombre' className='detail-principal-form-input' type='text' placeholder='Nombre y Apellido'/>
@@ -73,14 +86,21 @@ export default function Detail() {
       </section>
 
       <section className='detail-info'>
-        <h3 className='detail-info-title'>Descripción</h3>
-        <p className='detail-info-text'>
-          { product.info }
-        </p>
-
-        <p className='detail-info-text'>
-          { product.detail }
-        </p>
+        <h2 className='detail-info-title'>{ product.name }</h2>
+        {
+          product.info.map(prod => {
+            return(
+              <div className='detail-info-container'>
+                <h4 className='detail-info-container-title'>{ prod.title }</h4>
+                <p className='detail-info-container-text'>{ prod.text }</p>
+                <hr></hr>
+              </div>
+            )
+          })
+        }
+        <button className='btn btn-primary mt-4' onClick={ () => handleDownload(product.path, product.filename) }>
+          Descargar Ficha Técnica
+        </button>
       </section>
     </main>
   )

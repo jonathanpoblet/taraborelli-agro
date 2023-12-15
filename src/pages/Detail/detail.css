@@ -29,7 +29,9 @@ p {
 
 .detail-header-title {
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px;
 }
 
 .detail-principal {
@@ -38,6 +40,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .detail-principal-img {
@@ -104,14 +107,27 @@ p {
 .detail-info {
     padding: 20px;
     margin-top: 40px;
+    max-width: 920px;
 }
 
 .detail-info-title {
-    margin-bottom: 30px;
-    font-size: 700;
+    color: #002d5a;
+    font-weight: 700;
 }
 
-.detail-info-text {
+.detail-info-container {
+    /* padding: 20px 0px; */
+}
+
+.detail-info-container-title {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-size: 700;
+    color: #004994;
+
+}
+
+.detail-info-container-text {
     margin-bottom: 20px;
     color: #3d3d3d;
 }

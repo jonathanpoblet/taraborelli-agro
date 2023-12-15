@@ -29,10 +29,10 @@ export default function Product({ data }) {
                           <div onClick={ () => viewDetail(d.id)} key={ d.id } className='product-list-photos-container'>
                             <img
                               className='product-list-photos-img' 
-                              src={ d.img } 
+                              src={ d.images[0] } 
                               alt={ da.name } 
                               key={ index } 
-                            />
+                              />
                             <p>{ d.name }</p>
                           </div>
                           )

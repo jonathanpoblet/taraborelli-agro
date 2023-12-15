@@ -36,7 +36,7 @@ export default function Home() {
     },
   ]
 
-  const data = ['./assets/trucks/t5-s.png', './assets/trucks/t6.png', './assets/harvester/c4-5-85.png', './assets/mixers/mgv-110f.png'];
+  const data = ['./assets/trucks/t4f.png', './assets/trucks/tk4.png', './assets/harvester/c4-5-85.png', './assets/mixers/mgv-110f.png'];
 
   return (
     <main className='home fade-in'>
