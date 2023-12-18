@@ -245,58 +245,221 @@ const products = [
       }
     ]
   },
-  // {
-  //   name: 'COSECHADORAS',
-  //   products: [
-  //     {
-  //       img: './assets/harvester/c4-5-85.png',
-  //       id: '200',
-  //       name: 'CR 5.85',
-  //       info: 'La pionera tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los grandes cóncavos proporcionan un rozamiento suave en toda su longitud, grano a grano, con una gran fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y máxima calidad del grano.',
-  //       detail: 'El extraordinario sistema de limpieza de doble acción produce grano de alta calidad en cualquier tipo de cultivo, debido a su gran área de limpieza de grano. Es capaz de procesar un gran volumen de granos mediante el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza un flujo de aire uniforme a través de los tamices. La extrema eficiencia de trilla y separación y el eficiente sistema de limpieza mantienen la cantidad de relaves en el RC al mínimo.'
-  //     },
-  //     {
-  //       img: './assets/harvester/c4-evo.png',
-  //       id: '201',
-  //       name: 'CR EVO',
-  //       info: 'La exclusiva tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los cóncavos de grandes dimensiones realizan una fricción suave en toda su extensión, grano a grano, con elevada fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y la máxima calidad del grano.',
-  //       detail: 'El extraordinario sistema de limpieza de doble acción produce granos de alta calidad en cualquier tipo de cosecha, debido a su gran área de limpieza. Es capaz de procesar un gran volumen de granos, por el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza el flujo de aire homogéneo a través de los zarandas. La extrema eficacia de la trilla y la separación y el eficiente sistema de limpieza reducen al mínimo la cantidad de perdidas en la CR Evo.'
-  //     }
-  //   ]
-  // },
-  // {
-  //   name: 'FORRAJES',
-  //   products: [
-  //     {
-  //       img: './assets/mixers/mg-100.png',
-  //       id: '300',
-  //       name: 'MG 100',
-  //       info: 'Mezclador y distribuidor de raciones de 10 m3 de capacidad. Mezclado a través de 3 sinfines horizontales. Está comandado por toma de potencia directa desde el tractor. La descarga del producto está accionada hidráulicamente integralmente desde la cabina del tractor. Equipado con balanza electrónica para una correcta formulación de las dietas.',
-  //       detail: 'Descarga por acción de 2 sinfines que garantizan una entrega pareja y una mezcla homogénea de la ración.',
-  //     },
-  //     {
-  //       img: './assets/mixers/mg-70.png',
-  //       id: '301',
-  //       name: 'MG 70',
-  //       info: 'Mezclador y distribuidor de raciones de 7 m3 de capacidad. Mezclado a través de 3 sinfines horizontales. Está comandado por toma de potencia directa desde el tractor. La descarga del producto es accionada integralmente desde la cabina del tractor en forma hidráulica. Equipado con balanza electrónica para una correcta formulación de las dietas.',
-  //       detail: 'Transmisión trasera por medio de cadenas a rodillos tratadas y de alta resistencia. Proveen una reducción de esfuerzos en la barra de mando. Menos potencia requerida.',
-  //     },
-  //     {
-  //       img: './assets/mixers/mgv-110f.png',
-  //       id: '302',
-  //       name: 'MGV 110F',
-  //       info: 'Mezclador y distribuidor de raciones de tipo vertical DE 11 m3 de capacidad. El mezclado se produce por un sinfín cónico de paso variable de tipo vertical. Está dotado de cuchillas que permiten el desmenuzado de rollos y fardos prismáticos. La descarga es a través de noria. Totalmente comandado desde el tractor.',
-  //       detail: 'Sinfín único en su estilo por su agresividad en rollos y fardos prismáticos. Dotado de cuchillas dentadas construidas de materiales bonificados tratados térmicamente y respaldadas con carburo de tungsteno (auto afilables).',
-  //     },
-  //     {
-  //       img: './assets/mixers/mgv-150f.png',
-  //       id: '303',
-  //       name: 'MGV 150F',
-  //       info: 'Mezclador y distribuidor de raciones de tipo vertical de 14 m3 de capacidad. El mezclado se produce por un sinfín cónico de paso variable de tipo vertical. Está dotado de cuchillas que permiten el desmenuzado de rollos y fardos prismáticos. La descarga es a través de noria. Totalmente comandado desde el tractor.',
-  //       detail: 'Puerta especialmente diseñada para trabajar en el mismo plano que las paredes de la tolva., Única en el mundo, que garantiza la excelencia en el mezclado. Sistema propio y único del mercado.',
-  //     }
-  //   ]
-  // }
+  {
+    name: 'COSECHADORAS',
+    products: [
+      {
+        images: ['./assets/harvester/cr-5.png'],
+        id: '200',
+        name: 'CR 5.85',
+        filename: 'cr5',
+        path: './src/pdfs/cr-5.pdf',
+        info: [
+          {
+            title: 'LA MAYOR ACCIÓN CENTRÍFUGA DEL MERCADO',
+            text: 'La exclusiva tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los cóncavos de grandes dimensiones realizan una fricción suave en toda su extensión, grano a grano, con elevada fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y la máxima calidad del grano.'
+          },
+          {
+            title: 'EXCLUSIVO SISTEMA DE LIMPIEZA',
+            text: 'El extraordinario sistema de limpieza de doble acción produce granos de alta calidad en cualquier tipo de cosecha, debido a su gran área de limpieza. Es capaz de procesar un gran volumen de granos, por el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza el flujo de aire homogéneo a través de los zarandas. La extrema eficacia de la trilla y la separación y el eficiente sistema de limpieza reducen al mínimo la cantidad de perdidas en la CR Evo.'
+          }
+        ]
+      },
+      {
+        images: ['./assets/harvester/cr-6.png'],
+        id: '201',
+        name: 'CR 6.80',
+        filename: 'cr6',
+        path: './src/pdfs/cr-6.pdf',
+        info: [
+          {
+            title: 'LA MAYOR ACCIÓN CENTRÍFUGA DEL MERCADO',
+            text: 'La exclusiva tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los cóncavos de grandes dimensiones realizan una fricción suave en toda su extensión, grano a grano, con elevada fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y la máxima calidad del grano.'
+          },
+          {
+            title: 'EXCLUSIVO SISTEMA DE LIMPIEZA',
+            text: 'El extraordinario sistema de limpieza de doble acción produce granos de alta calidad en cualquier tipo de cosecha, debido a su gran área de limpieza. Es capaz de procesar un gran volumen de granos, por el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza el flujo de aire homogéneo a través de los zarandas. La extrema eficacia de la trilla y la separación y el eficiente sistema de limpieza reducen al mínimo la cantidad de perdidas en la CR Evo.'
+          }
+        ]
+      },
+      {
+        images: ['./assets/harvester/cr-7.png'],
+        id: '202',
+        name: 'CR 7.90 Intellisense',
+        filename: 'cr7',
+        path: './src/pdfs/cr-7.pdf',
+        info: [
+          {
+            title: 'LA MAYOR ACCIÓN CENTRÍFUGA DEL MERCADO',
+            text: 'La exclusiva tecnología de doble rotor es responsable de una cosecha de calidad y alta productividad. Los dos rotores y los cóncavos de grandes dimensiones realizan una fricción suave en toda su extensión, grano a grano, con elevada fuerza centrífuga, lo que contribuye a una gran capacidad de trilla y separación y la máxima calidad del grano.'
+          },
+          {
+            title: 'EXCLUSIVO SISTEMA DE LIMPIEZA',
+            text: 'El extraordinario sistema de limpieza de doble acción produce granos de alta calidad en cualquier tipo de cosecha, debido a su gran área de limpieza. Es capaz de procesar un gran volumen de granos, por el sistema de trilla y separación. Un potente ventilador sopla una gran cantidad de aire, lo que garantiza el flujo de aire homogéneo a través de los zarandas. La extrema eficacia de la trilla y la separación y el eficiente sistema de limpieza reducen al mínimo la cantidad de perdidas en la CR Evo.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: 'HENO Y FORRAJES',
+    products: [
+      {
+        images: ['./assets/forage/bigbaler-plus.png', './assets/forage/bigbaler-plus2.png'],
+        id: '300',
+        name: 'BIGBALER PLUS',
+        filename: 'bigbaler-plus',
+        path: './src/pdfs/bigbaler-plus.pdf',
+        info: [
+          {
+            title: 'EMPACADO PROFESIONAL DE NEW HOLLAND',
+            text: 'New Holland lleva más de 25 años liderando el segmento de las empacadoras gigantes y ha introducido una serie de primicias que han revolucionado el empacado de grandes dimensiones en todo el mundo. Está garantizado el máximo rendimiento de empacado en todos los cultivos y en todos los tipos de explotación. Los nuevos modelos Plus resultarán irresistibles para los responsables de las explotaciones de heno y forraje, las empresas contratistas de paja, el sector de la biomasa y las grandes fincas de cultivo por su cámara de empacado, 80 cm más larga, y la calidad sistemática de las pacas, un 10% más densas.'
+          },
+          {
+            title: 'DISEÑO DE LAS BIGBALER',
+            text: 'La serie BigBaler actual se ha sometido a un programa intensivo de pruebas con toda clase de cultivos y condiciones agrícolas. Hemos trabajado incansablemente para obtener el máximo provecho de todas sus características y así garantizarle una productividad óptima.'
+          },
+          {
+            title: 'BIGBALER: LA MEJOR OPCIÓN',
+            text: 'Con cuatro modelos, la serie BigBaler le permitirá elegir la empacadora que mejor se adapte a su actividad, desde el modelo estándar de 80 x 70 cm hasta el superior de 120 x 90 cm. También es posible escoger el método de procesamiento del producto, ya sea estándar, Packer Cutter o CropCutter™.'
+          },
+          {
+            title: 'LE PRESENTAMOS LA ÚLTIMA SERIE DE EMPACADORAS PLUS',
+            text: 'Los nuevos modelos Plus elevan la serie BigBaler a un nivel enteramente nuevo de productividad y eficacia. Disfrutan de estas características: • Hasta un 10% más de densidad • Densidad uniforme durante toda la jornada de trabajo • Pacas mejor formadas • Menor riesgo de rotura de la cuerda • Empacado incluso en los entornos más calurosos • Descarga más delicada de las pacas • Mantenimiento más fácil y accesible • Mayor facilidad de limpieza.'
+          },
+          {
+            title: 'BIGBALER 1290 PLUS. RETO CONSEGUIDO.',
+            text: 'New Holland Agriculture puso la BigBaler 1290 Plus a trabajar, enganchada a un tractor T7.315 Heavy Duty Auto Command en un reto que tuvo a estas dos maquinas trabajando 17 horas en dos jornadas en condiciones reales de trabajo, entregando una productividad excepcional con 1.254 pacas realizadas. El reto fue superado y los resultados fueron confirmados por la empresa certificadora SGS.'
+          }
+        ]
+      },
+      {
+        images: ['./assets/forage/fr.png', './assets/forage/fr2.png', './assets/forage/fr3.png', './assets/forage/fr4.png'],
+        id: '301',
+        name: 'FR FORAGE CRUISER',
+        filename: 'fr-forage-cruiser',
+        path: './src/pdfs/fr-forage-cruiser.pdf',
+        info: [
+          {
+            title: 'COSECHA DE FORRAJE A ESCALA MÁXIMA',
+            text: 'New Holland lleva más de medio siglo en la vanguardia del sector de cosecha de forraje. Ha introducido gran cantidad de avances que han revolucionado la manera de cosechar actual. La flamante FR920, a la cabeza de la gama, sitúa a New Holland en nuevas cotas. Se ha unido la extraordinaria capacidad de picado a un confort del operador sin igual. Se ha optimizado el sistema de alimentación, dando como resultado un gran incremento de capacidad y productividad. Todas estas prestaciones se alojan en un diseño achaflanado y elegante que lleva la firma inconfundible de New Holland.'
+          },
+          {
+            title: 'CAPACIDAD MÁXIMA',
+            text: 'New Holland es consciente de que la productividad de las picadoras de forraje es fundamental y de que los propietarios sueñan con toneladas por hora. La nueva FR920 está equipada con el flamante motor V20 de 8 cilindros en V. Está desarrollado por FPT Industrial y se sorprenderá al ver su potencia desplegada en el campo. El modo ECO de gestión del motor garantiza la plena carga del motor en relación con el régimen predeterminado para aportar una eficiencia operativa y unas prestaciones óptimas. Las funciones del reconocido sistema Power Cruise™ aseguran la eficiencia de la FR en campos de distintas densidades de cultivo y los avanzados cabezales son óptimos para hierba, maíz y plantas enteras.'
+          },
+          {
+            title: 'EXCELENTE CALIDAD DE RECOLECCIÓN',
+            text: 'La tecnología propia HydroLoc™ garantiza la longitud constante del picado, con independencia del volumen y tipo de cultivo. El sistema ActiveLOC™ adapta automáticamente la longitud del corte al contenido de humedad para ofrecer una calidad inigualable. El ajuste automático mantiene una excelente calidad de picado y, al combinarse con el desmenuzamiento uniforme del grano del nuevo procesador de cultivo de gran resistencia DuraCracker™, se asegura la máxima calidad de forraje y biomasa.'
+          },
+          {
+            title: 'MENOS GASTOS DE FUNCIONAMIENTO',
+            text: 'La reducción de los gastos de funcionamiento se traduce en mayores beneficios. Las picadoras FR780 y FR920 están equipadas con la tecnología HI-eSCR 2 ECOBlue™ para cumplir con los requisitos sobre emisiones más rigurosos hasta la fecha de la norma Fase V y mantienen el excelente nivel de eficiencia que cabe esperar de la gama FR Forage Cruiser. Los modelos restantes de la gama FR incorporan la prestigiosa tecnología HI-eSCR ECOBlue™, que optimiza el consumo de combustible y permite ahorrar dinero, a la vez que cumple la norma Tier 4B. Por ejemplo, el modelo FR650 tiene un 5%* más de capacidad pero consume un 21%* menos de combustible que el anterior modelo más grande, el FR700. Mayor productividad y reducción de costes. La avanzada tecnología MetaLoc™ protege la picadora FR de la penetración de elementos metálicos potencialmente dañinos. En el procesador de cultivo con sistema patentado Variflow™ se puede cambiar la posición de maíz a hierba en menos de 2 minutos sin necesidad de utilizar herramientas. El ahorro de tiempo aumenta los beneficios. * Consulte los datos de certificación oficiales de DLG.'
+          },
+          {
+            title: 'EFICIENCIA DE COMBUSTIBLE QUE NO ADMITE COMPARACIÓN',
+            text: 'La picadora FR650 Forage Cruiser fue sometida a las rigurosas pruebas de DLG Fokus. Los resultados evidencian un ahorro de combustible impresionante. La FR650 apenas consumió 0,5 litros de diésel por tonelada de maíz cosechada y con picado de 8 mm. En comparación con el modelo anterior FR700, la diferencia consistió en un 21% de ahorro de combustible y un aumento de la capacidad del 5%.'
+          }
+        ]
+      },
+      {
+        images: ['./assets/forage/cabezales-para-segadora-hileradora-autopropulsada.png', './assets/forage/cabezales-para-segadora-hileradora-autopropulsada2.png', './assets/forage/cabezales-para-segadora-hileradora-autopropulsada3.png'],
+        id: '302',
+        name: 'SEGADORA HILERADORA',
+        filename: null,
+        path: null,
+        info: [
+          {
+            title: 'CABEZALES DE ALTO RENDIMIENTO',
+            text: `Las potentes hileradoras Speedrower® SP permiten que usted conduzca una amplia variedad de cabezales de alto rendimiento. Elija entre dos poderosos cabezales de disco - el Durabine™ 416 con corte de 16'1", o el Durabine™ 419 con corte de 19'4", el más ancho de la industria. Los cabezales de hoz Haybine® tienen una historia legendaria del rendimiento de corte y acondicionamiento superior, y están disponibles con un corte de 14, 16 ó 18 pies.`
+          }
+        ]
+      },
+      {
+        images: ['./assets/forage/rotoenfardadoras.png', './assets/forage/rotoenfardadoras2.png', './assets/forage/rotoenfardadoras3.png'],
+        id: '303',
+        name: 'ROTOENFARDADORAS',
+        filename: 'rotoenfardadoras',
+        path: './src/pdfs/rotoenfardadoras.pdf',
+        info: [
+          {
+            title: 'CAPACIDAD, INNOVACIÓN Y DENSIDAD EXCEPCIONALES',
+            text: 'El liderazgo de New Holland en equipos para heno y forraje se deriva de la pasión por brindar a nuestros clientes equipos que faciliten su trabajo y les permitan lograr mayor eficiencia y rentabilidad. Son estas características precisamente las que ofrece la última generación de rotoenfardadoras de la serie Roll-Belt. Los ajustes y los servicios de mantenimiento han sido pensados teniendo en cuenta la simplicidad. Una gran variedad de modelos cuenta con paletas recolectoras duraderas y sistemas de alimentación sin complicaciones que le brindan mayor capacidad para enfardar más rápido que nunca. Las innovadoras soluciones de Precision Land Management (PLM™), como IntelliBale™, el control de densidad en la cabina y la detección de humedad de fábrica lo ayudan a tomar mejores decisiones sobre la marcha.'
+          },
+          {
+            title: 'LA ROTOENFARDADORA ADECUADA',
+            text: 'Sea que se trate de un agricultor a tiempo parcial que ocasionalmente debe enfardar 8 hectáreas o de un contratista que presta servicios a 20 clientes, hay una rotoenfardadora Roll-Belt para satisfacer sus necesidades.'
+          },
+          {
+            title: 'LA DENSIDAD MARCA LA DIFERENCIA',
+            text: 'Independientemente de si está enfardando heno seco o forraje pesado sometido a ensilado, paja resbaladiza o tallos de maíz gruesos, las rotoenfardadoras Roll-Belt producen la densidad de fardos que usted espera. Los fardos densos le permiten ahorrar dinero al reducir la compactación del suelo, minimizar el daño a la planta para un rebrote más rápido, mejorar el tonelaje en el próximo corte, reducir sus costos operativos y el tiempo de procesamiento y mejorar la salud del ganado a través de un forraje de mejor calidad.'
+          },
+          {
+            title: 'HERRAMIENTAS DE PRECISIÓN QUE BRINDAN MEJORES RESULTADOS',
+            text: 'Ya sea que esté utilizando la tecnología y los tractores más avanzados o la maquinaria más clásica, las rotoenfardadoras Roll-Belt le brindan una gran variedad de soluciones de precisión para mejorar su experiencia de enfardado. Desde monitores intuitivos hasta soluciones como IntelliBale, usted podrá enfardar de manera más inteligente y rápida que nunca.'
+          },
+          {
+            title: 'AMPLÍE LAS POSIBILIDADES DE ENFARDADO',
+            text: 'Cuando trata el heno con el conservante de New Holland CropSaver™, puede enfardar a humedades de hasta 30 % sin preocuparse por los daños que como resultado del calor o moho. Esto significa que puede comenzar a enfardar antes y permanecer en el campo hasta más tarde para completar su horario de trabajo, sin importar las condiciones climáticas. El conservante CropSaver también ayuda a mantener tanto el olor fresco como el color verde del heno, incluso después de almacenarlo.'
+          }
+        ]
+      },
+      {
+        images: ['./assets/forage/segadora-central.png', './assets/forage/segadora-central2.png', './assets/forage/segadora-central3.png'],
+        id: '304',
+        name: 'SEGADORA 313/316',
+        filename: 'segadora-central',
+        path: './src/pdfs/segadora-central.pdf',
+        info: [
+          {
+            title: 'CORTE MÁS BAJO. SECADO MÁS RÁPIDO. MAYOR DURABILIDAD',
+            text: 'Las segadoras de discos con pivote central están redefiniendo la industria de las segadoras acondicionadoras de disco, lo que lleva el rendimiento de corte a nuevos niveles. La Discbine 313 de 13 pies y la Discbine 316 de 16 pies con 3 pulgadas, han sido diseñadas con mayor durabilidad y características que conducen a un corte más limpio, un flujo de cosecha más eficiente y un acondicionamiento más suave y eficaz.'
+          },
+          {
+            title: 'BARRA DE CORTE DE DISCO MOWMAX ™ II',
+            text: 'Esta es una barra de corte diseñada para las mayores demandas de grandes operaciones de cosecha. Incorpora discos grandes y componentes de servicio pesado, que también se encuentran en los cabezales de discos Durabine™ para las segadoras autopropulsadss New Holland Speedrower® . Los Discbine 313 y 316 hacen un trabajo rápido cortando heno y preparando su cosecha para empacar o picar, ya sea que usted esté segando alfalfa, trébol, hierba del huerto, timoteo, pasto bermuda, bahia, hierba, festuca, centeno, trigo forrajero o avena.'
+          },
+          {
+            title: 'SISTEMAS DE CONDUCCIÓN SIMPLIFICADOS',
+            text: 'El nuevo diseño inteligente de la barra de corte MowMax II permite conducir la barra de corte desde un solo extremo, lo que simplifica el mantenimiento y deja la parte superior del cabezal despejada. Todas las juntas universales son fácilmente accesibles para el mantenimiento, y el intervalo de lubricación se ha ampliado a 50 horas para que pase menos tiempo en el mantenimiento.'
+          },
+          {
+            title: 'OPCIONES DE ACOPLAMIENTO GIRATORIO',
+            text: 'Elija el acoplamiento giratorio para barra de tracción o el acoplamiento giratorio de dos puntos y obtenga el máximo rendimiento de giro sin afectar la transmisión. La potencia de la toma de fuerza se transfiere de la caja de engranajes giratoria delantera a una segunda caja de engranajes giratoria en la parte posterior de la lengüeta que mantiene la alineación perfecta del eje de transmisión de salida con la barra de corte y la caja de engranajes de accionamiento del acondicionador en el lado izquierdo de la unidad.'
+          },
+          {
+            title: 'MANTENIMIENTO SENCILLO. FÁCIL ACCESO',
+            text: 'New Holland ha facilitado el acceso a los discos y componentes de la unidad más que nunca. Los escudos superiores Poly bifold son ligeros, plegables y fáciles de levantar, y son más resistentes a los impactos de abolladuras por objetos extraños. La puerta de acero de acceso es de doble capa para resistir la abolladura en esa área también. La superposición de material mantiene las cortinas en su lugar sin la necesidad de clips o imanes.'
+          }
+        ]
+      },
+      {
+        images: ['./assets/forage/speedpower-plus.png', './assets/forage/speedpower-plus2.png', './assets/forage/speedpower-plus3.png'],
+        id: '305',
+        name: 'SPEEDROWER PLUS',
+        filename: 'speedpower-plus',
+        path: './src/pdfs/speedpower-plus.pdf',
+        info: [
+          {
+            title: 'PRESENTAMOS LAS NUEVAS SEGADORAS AUTOPROPULSADAS SPEEDROWER PLUS',
+            text: 'Nuestra pasión es brindarle cada vez más en cada hectárea. La última generación de maquinarias Speedrower es producto de años de escuchar a productores forrajeros como usted para construir una segadora que lo ayude a cortar mayores cantidades de forraje por día. El resultado es la segadora autopropulsada Speedrower PLUS, que ofrece excelente maniobrabilidad gracias a su sistema "drive by wire" (accionamiento por cable) SensiDrive™ de controles electrónicos avanzados, mayor productividad con las velocidades más rápidas de la industria, soluciones Precision Land Management (PLM™) fáciles de usar y mayor comodidad que nunca para quien opera la máquina.'
+          },
+          {
+            title: 'MÁS RÁPIDA EN EL CAMPO Y EN LA CARRETERA',
+            text: 'Todas las máquinas de la serie Speedrower PLUS le permiten ahorrar tiempo. Los tres modelos brindan una excelente velocidad máxima en el campo, de 32 kph (20 mph). Para permitirle moverse más rápido de un campo a otro, los modelos estándar ofrecen velocidades máximas de hasta 35 kph (22 mph), mientras que la nueva versión de transporte de alta velocidad (disponible en Speedrower 220 PLUS y 260 PLUS) ofrece la velocidad máxima más rápida de la industria, a 48 kph (30 mph). Las versiones de transporte de alta velocidad brindan visibilidad frontal además de control adicional de los frenos de servicio automáticos y dirección del eje trasero para un transporte estable, seguro y productivo.'
+          },
+          {
+            title: 'PRECISIÓN EN EL CAMPO PARA MAYOR PRODUCTIVIDAD',
+            text: 'Las segadoras Speedrower PLUS pueden incorporar lo más avanzado en la tecnología PLM, y así logran mantenerse en un camino recto, lo que lleva a obtener mayor productividad. Con solo tocar un botón, la guía automática IntelliSteer™ instalada de fábrica puede aumentar la eficiencia y comodidad, al tiempo que reduce los costos operativos y mejora los resultados. Además, usted puede monitorear su segadora Speedrower PLUS donde quiera que se encuentre y en cualquier momento mediante el sistema de gestión de flota MyPLM™ Connect.'
+          },
+          {
+            title: 'MÁXIMA CAPACIDAD DE ACTIVIDAD PARA AHORRARLE TIEMPO',
+            text: 'El tiempo que ahorre en el campo lo ayudará a segar más hectáreas por día. Para maximizar el tiempo de actividad, la serie Speedrower PLUS ofrece abastecimiento de combustible a nivel de suelo, un servicio simple e intervalos de servicio excelentes. En el arranque, no hay demoras ni necesidad de centrar manualmente el volante. Se eliminan los complejos controles mecánicos e hidromecánicos a fin de reducir los puntos de mantenimiento diario.'
+          }
+        ]
+      }
+    ]
+  }
 ]
 
 export const productsSlice = createSlice({
