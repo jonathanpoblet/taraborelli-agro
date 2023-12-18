@@ -41,7 +41,7 @@ export default function ContactSection() {
     setTimeout(() => {
       Swal.fire({title: 'Formulario enviado con exito', confirmButtonText: 'OK',confirmButtonColor: '#000', customClass: { popup: 'custom-background', title: 'custom-title' }});
       setTimeout(() => {
-        navigate(`/`);
+        window.location.reload()
       }, 1500);
     }, 1500);
 
