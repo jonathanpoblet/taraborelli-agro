@@ -1,10 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 import './contactSection.css';
 
 export default function ContactSection() {
 
-  const navigate = useNavigate();
 
   const sendForm = () => {
     let form = {

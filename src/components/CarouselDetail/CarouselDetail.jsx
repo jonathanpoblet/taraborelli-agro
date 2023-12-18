@@ -9,10 +9,11 @@ export default function CarouselDetail({ srcs }) {
   return (
     <Carousel data-bs-theme="dark" className='carouselDetail'>
       {
-        srcs.map(src => {
+        srcs.map((src,index) => {
           return (
           <Carousel.Item>
             <img
+              key={ index }
               className="d-block carouselDetail-img"
               src={ src }
               alt="Slide"

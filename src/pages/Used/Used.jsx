@@ -5,10 +5,10 @@ export default function Used() {
   return (
     <main className='used'>
       <CarouselUsed
-        src1='./public/assets/used/usados1.png' 
-        src2='./public/assets/used/usados2.png' 
-        src3='./public/assets/used/usados3.png' 
-        src4='./public/assets/used/usados4.png' 
+        src1='./assets/used/usados1.png' 
+        src2='./assets/used/usados2.png' 
+        src3='./assets/used/usados3.png' 
+        src4='./assets/used/usados4.png' 
       />
       <div className='used-info'>
         <h1>Descubre Nuestra Selección de Maquinaria Agrícola Usada</h1>
