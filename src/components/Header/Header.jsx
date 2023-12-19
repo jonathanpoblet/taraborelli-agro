@@ -26,17 +26,15 @@ export default function Header() {
     <header className='header'>
       <div className='header-container'>
         <div className='header-container-info'>
-          <a className='header-container-info-a' href='https://www.instagram.com/gabrielkellycia/'>
+          <a className='header-container-info-a' href='https://www.instagram.com/taraborelliagro/'>
             <AiOutlineInstagram />
           </a>
-          <a className='header-container-info-a' href='https://www.facebook.com/Gabriel.Kelly.Cia/'>
+          <a className='header-container-info-a' href='https://www.facebook.com/taraborelliagro'>
             <BiLogoFacebook />
           </a>
         </div>
         <div className='header-container-info'>
-          <a className='header-container-tel' href='tel:2342480359'>Chivilcoy: 2342 - 480359</a>
-          <a className='header-container-tel' href='tel:2346470995'>Alberti: 2346 - 470995</a>
-          <a className='header-container-tel' href='tel:2342430803'>Bragado: 2342 - 430803</a>
+          <a className='header-container-tel' href='tel:02346 – 470995'>Arrecifes: 02346 – 470995</a>
         </div>
       </div>
 
