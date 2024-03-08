@@ -1,275 +1,271 @@
 p {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .slide-in {
-    position: relative;
-    animation: slide-in 1.5s ease forwards;
-    white-space: nowrap;
-    overflow: hidden;
+  position: relative;
+  animation: slide-in 1.5s ease forwards;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.slide-in h1{
-    text-shadow: 1px 1px 1px #949494;
+.slide-in h1 {
+  text-shadow: 1px 1px 1px #949494;
 }
-  
-  @keyframes slide-in {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 .home {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  overflow: hidden;
 }
 
 .home-banner {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .home-banner img {
-    width: 100%;
-    margin-bottom: 50px;
-    min-height: 200px;
+  width: 100%;
+  margin-bottom: 50px;
+  min-height: 200px;
 }
 
 .home-banner div {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    height: 100%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 100%;
 }
 
 .home-banner div h1 {
-    margin-bottom: 35px;
-    color: #fff;
-    font-size: 60px;
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 60px;
 }
 
 .home-banner-div-link {
-    background-color: #004994;
-    color: #fff;
-    padding: 14px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: 0.4s;
-    box-shadow: 1px 1px 5px 1px #6b6b6b;
+  background-color: #01274d;
+  color: #fff;
+  padding: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.4s;
+  box-shadow: 1px 1px 5px 1px #202020;
 }
 
 .home-banner-div-link:hover {
-    background-color: #002549;
+  background-color: #001224;
 }
 
 .home-looking {
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .home-looking-title {
-    text-shadow: 1px 1px 1px #eeeeee;
-
+  text-shadow: 1px 1px 1px #eeeeee;
 }
 
 .home-looking-container {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .home-looking-container a {
-    transition: 0.5s;
-    text-decoration: none;
-
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 .home-looking-container a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .home-looking-container a div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 80px;
-    box-shadow: 2px 2px 10px 2px #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 2px 2px 10px 2px #cfcfcf;
 }
 
 .home-looking-container a div img {
-    height: 270px;
-    width: 250px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  height: 270px;
+  width: 250px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .home-looking-container a div p {
-    width: 100%;
-    background-color: #004994;
-    color: #fff;
-    text-align: center;
-    padding: 15px 5px;
-    font-size: 15px;
-    font-weight: 500;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    line-height: 20px;
+  width: 100%;
+  background-color: #01274d;
+  color: #fff;
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  line-height: 20px;
 }
 
-
 .home-productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .home-productos-head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #004994;
-    padding: 16px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #01274d;
+  padding: 16px 25px;
 }
 
 .home-productos-head h3 {
-    color: #fff;
-    font-family: 100;
-    font-size: 16px;
+  color: #fff;
+  font-family: 100;
+  font-size: 16px;
 }
 
 .home-productos-head-link {
-    text-decoration: none;
-    background-color: #004994;
-    color: #fff;
-    padding: 7px;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: 0.4s;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.4s;
 }
 
 .home-productos-head-link:hover {
-    background-color: #002549;
-    border: none;
+  opacity: 0.7;
+  border: none;
 }
 
 .home-productos-photos {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .home-productos-photos img {
-    width: 25%;
-    min-width: 200px;
-    transition: 0.5s;
-    cursor: pointer;
+  width: 25%;
+  min-width: 200px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .home-productos-photos img:hover {
-    transform: scale(1.2)
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1300px) {
-    .home-looking-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 700px;
-    }
+  .home-looking-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+  }
 
-    .home-looking-container div {
-        margin: 15px 40px;
-    }
-
-
+  .home-looking-container div {
+    margin: 15px 40px;
+  }
 }
 
 @media screen and (max-width: 1020px) {
-    .home-productos-photos {
-        justify-content: center;
-    }
+  .home-productos-photos {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .home-banner div h1 {
-        color: #fff;
-        text-shadow: 1px 1px 1px #111;
-    }
+  .home-banner div h1 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #111;
+  }
 
-    .home-productos-photos img {
-        width: 50%;
-        max-width: 300px;
-    }
+  .home-productos-photos img {
+    width: 50%;
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width: 760px) {
-    .home {
-        padding-top: 0px;
-    }
+  .home {
+    padding-top: 0px;
+  }
 
-    .home-banner div h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
+  .home-banner div h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
 
-    .home-banner-div-link {
-        padding: 7px;
-        font-size: 12px;
-    }
+  .home-banner-div-link {
+    padding: 7px;
+    font-size: 12px;
+  }
 
-    .home-looking-title {
-        font-size: 17px;
-        padding: 0px 30px;
-    }
+  .home-looking-title {
+    font-size: 17px;
+    padding: 0px 30px;
+  }
 }
 
 @media screen and (max-width: 620px) {
-    .home-looking-container {
-        flex-direction: column;
-    }
+  .home-looking-container {
+    flex-direction: column;
+  }
 
-    .home-looking-title {
-        font-size: 16px;
-    }
+  .home-looking-title {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .home-productos-photos img {
-        min-width: 0px;
-    }
+  .home-productos-photos img {
+    min-width: 0px;
+  }
 
-    .home-productos-head h3 {
-        font-size: 14px;
-        padding-right: 20px;
-    }
+  .home-productos-head h3 {
+    font-size: 14px;
+    padding-right: 20px;
+  }
 
-    .home-band {
-        height: 300px;
-        background-color: #004994;
-        width: 100%;
-        margin-bottom: -150px;
-    }
+  .home-band {
+    height: 300px;
+    background-color: #004994;
+    width: 100%;
+    margin-bottom: -150px;
+  }
 }
