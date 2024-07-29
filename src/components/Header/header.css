@@ -29,10 +29,12 @@
   align-items: center;
   background-color: #01274d;
   color: #fff;
-  padding: 14px 0px;
+  padding: 0px;
 }
 
 .header-container-info {
+  display: flex;
+  flex-direction: row;
   padding: 0px 20px;
 }
 
