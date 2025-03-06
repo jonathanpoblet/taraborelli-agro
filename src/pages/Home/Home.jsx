@@ -19,13 +19,13 @@ export default function Home() {
       path: '/usados',
       img: './assets/home/home2.jpg',
       page: 'USADOS',
-      title: 'USADOS',
+      title: 'NUEVOS',
     },
     {
       path: '/postventa',
       img: './assets/home/home3.jpg',
       page: 'POSTVENTA',
-      title: 'POSTVENTA',
+      title: 'USADOS',
     },
     {
       path: '/agricultura-de-precision',
