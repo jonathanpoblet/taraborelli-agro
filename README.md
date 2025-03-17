@@ -1,16 +1,16 @@
-# Taraborelli Agro
+# AGRO MAQUINARIA
 
-Deploy: http://prueba.taraborelliagro.com/
+Deploy: https://agromaquinaria.cloud
 
-![Taraborelli Agro](https://github.com/jonathanpoblet/taraborelli-agro/assets/106752020/bbd624ce-e74f-4483-aff5-76f2f6839e5c)
+![agro](https://github.com/user-attachments/assets/f71f30e8-2a0d-4f90-80d4-692fc4307197)
 
 ---
 
-## Descripción
+## Description
 
-Taraborelli Agro es una consecionaria que se encarga de vender maquinarias agricolas, tractores, excavadoras y mixers. Dentro del sitio web, podremos observar informacións sobre la empresa, las distintas maquinarias agricolas y un formulario de contacto. La idea principal es que el cliente pueda solicitar una cotización de la maquinaria interesada mediante un email. Tambien hay un boton de WhatsApp para poder hablar con un asesor.
+This is Agro Maquinaria, a professional website for truck company.
 
-#### Tecnologias
+#### Technologies
 
 - Vite
 - React JS
@@ -22,6 +22,7 @@ Taraborelli Agro es una consecionaria que se encarga de vender maquinarias agric
 
 ---
 
-## Info de Desarrollador
+## Info
 
-- Instagram - [@jonathanpoblet](https://www.instagram.com/jonathan_poblet/)
+- Virtual Designs - [@virtualdesigns.tech](https://www.instagram.com/virtualdesigns.tech/)
+
